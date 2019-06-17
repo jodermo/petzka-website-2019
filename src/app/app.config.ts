@@ -23,7 +23,6 @@ export const Config = {
   navigation: [
     {title: {de: 'Moritz Petzka', en: 'Moritz Petzka'}, icon: null, link: ''},
     {title: {de: 'Werkzeuge', en: 'My Tools'}, icon: null, link: 'tools'},
-    {title: {de: 'Skills', en: 'My Skills'}, icon: null, link: 'skills'},
     {title: {de: 'Links', en: 'Links'}, icon: null, link: 'links'},
     {title: {de: 'Kunden', en: 'Customers'}, icon: null, link: 'customers'},
   ],
@@ -40,8 +39,8 @@ export const Config = {
           en: 'Starting as a media designer (as apprentice) and flash developer at the time, today I can look back on over 10 years of professional experience in the online sector. \nOver the years I have come to know, control, and love so many programming languages, frameworks, and useful softwares. \nMeanwhile, I am able to bring almost any task to the desired destination. Whether it\'s a simple website or a complex corporate website, online shop, mobile app, online advertising, visualization of data, stage presentations or trade fair exhibits, I\'ve actually developed almost everything before. \n\nYou need assistance with a project? Here is a list of services I offer:'
         },
         toolText: {
-          de: 'Sogesehen benötigt man für die Entwicklung nur einen Text-Editor, mit den folgenden Werkzeugen hebt man das level: \n',
-          en: 'Starting as a media designer (as apprentice) and flash developer at the time, today I can look back on over 10 years of professional experience in the online sector. \nOver the years I have come to know, control, and love so many programming languages, frameworks, and useful softwares. \nMeanwhile, I am able to bring almost any task to the desired destination. Whether it\'s a simple website or a complex corporate website, online shop, mobile app, online advertising, visualization of data, stage presentations or trade fair exhibits, I\'ve actually developed almost everything before. \n\nYou need assistance with a project? Here is a list of services I offer:'
+          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
+          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
         list: [
           {
@@ -133,128 +132,18 @@ export const Config = {
           {
             alias: 'js',
             name: 'JavaScript/TypeScript',
-            icon: null,
+            icon: 'assets/logos/javascript.svg',
             link: null,
             experienceWorth: 10,
             description: {
               de: 'Frontend & Beckend Entwicklung',
               en: 'Frontend & backend development'
-            },
-            frameworks: [
-              {
-                alias: 'node',
-                language: 'js',
-                name: 'Node.js',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'angular',
-                language: 'js',
-                name: 'Angular',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'angularjs',
-                language: 'js',
-                name: 'AngularJS',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'nestjs',
-                language: 'js',
-                name: 'Nest.js',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'react',
-                language: 'js',
-                name: 'React',
-                icon: null,
-                link: null,
-                experienceWorth: 6,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'vue',
-                language: 'js',
-                name: 'Vue.js',
-                icon: null,
-                link: null,
-                experienceWorth: 6,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'three',
-                language: 'js',
-                name: 'Three.js',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'd3',
-                language: 'js',
-                name: 'D3.js',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              },
-              {
-                alias: 'jQuery',
-                language: 'js',
-                name: 'jQuery',
-                icon: null,
-                link: null,
-                experienceWorth: 10,
-                description: {
-                  de: '',
-                  en: ''
-                }
-              }
-            ]
+            }
           },
           {
             alias: 'html',
             name: 'HTML',
-            icon: null,
+            icon: 'assets/logos/html5.svg',
             link: null,
             experienceWorth: 10,
             description: {
@@ -265,7 +154,7 @@ export const Config = {
           {
             alias: 'css',
             name: 'CSS',
-            icon: null,
+            icon: 'assets/logos/css-3.svg',
             link: null,
             experienceWorth: 10,
             description: {
@@ -276,7 +165,7 @@ export const Config = {
           {
             alias: 'php',
             name: 'PHP',
-            icon: null,
+            icon: 'assets/logos/php-1.svg',
             link: null,
             experienceWorth: 8,
             description: {
@@ -285,25 +174,25 @@ export const Config = {
             }
           },
           {
-            alias: 'database',
-            name: 'Datenbanken',
-            icon: null,
-            link: null,
-            experienceWorth: 8,
-            description: {
-              de: 'APIs und Datenbank-Verwaltung',
-              en: 'APIs and Database Management'
-            }
-          },
-          {
             alias: 'python',
             name: 'Python',
-            icon: null,
+            icon: 'assets/logos/python-5.svg',
             link: null,
             experienceWorth: 6,
             description: {
               de: 'Beckend Entwicklung und Machinensteuerung',
               en: 'Backend development and machine control'
+            }
+          },
+          {
+            alias: 'database',
+            name: 'Datenbanken',
+            icon: 'assets/logos/cloud.svg',
+            link: null,
+            experienceWorth: 8,
+            description: {
+              de: 'APIs und Datenbank-Verwaltung',
+              en: 'APIs and Database Management'
             }
           },
         ],
@@ -312,8 +201,8 @@ export const Config = {
             alias: 'node',
             language: 'js',
             name: 'Node.js',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/nodejs-icon.svg',
+            link: 'https://nodejs.org/en/about/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -324,20 +213,8 @@ export const Config = {
             alias: 'angular',
             language: 'js',
             name: 'Angular',
-            icon: null,
-            link: null,
-            experienceWorth: 10,
-            description: {
-              de: '',
-              en: ''
-            }
-          },
-          {
-            alias: 'angularjs',
-            language: 'js',
-            name: 'AngularJS',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/angular-icon.svg',
+            link: 'https://angular.io/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -348,8 +225,8 @@ export const Config = {
             alias: 'nestjs',
             language: 'js',
             name: 'Nest.js',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/nest_logo.svg',
+            link: 'https://nestjs.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -360,8 +237,8 @@ export const Config = {
             alias: 'react',
             language: 'js',
             name: 'React',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/react.svg',
+            link: 'https://reactjs.org/',
             experienceWorth: 6,
             description: {
               de: '',
@@ -372,8 +249,8 @@ export const Config = {
             alias: 'vue',
             language: 'js',
             name: 'Vue.js',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/vue-js-1.svg',
+            link: 'https://vuejs.org/',
             experienceWorth: 6,
             description: {
               de: '',
@@ -384,8 +261,8 @@ export const Config = {
             alias: 'three',
             language: 'js',
             name: 'Three.js',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/javascript-4.svg',
+            link: 'https://threejs.org/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -396,20 +273,20 @@ export const Config = {
             alias: 'd3',
             language: 'js',
             name: 'D3.js',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/d3-2.svg',
+            link: 'https://d3js.org/',
             experienceWorth: 10,
             description: {
-              de: '',
-              en: ''
+              de: 'D3.js ist eine JavaScript-Bibliothek zum Bearbeiten von Dokumenten basierend auf Daten',
+              en: 'D3.js is a JavaScript library for manipulating documents based on data'
             }
           },
           {
             alias: 'jQuery',
             language: 'js',
             name: 'jQuery',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/jquery-2.svg',
+            link: 'https://jquery.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -420,8 +297,8 @@ export const Config = {
             alias: 'sass',
             language: 'css',
             name: 'SASS',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/node-sass.svg',
+            link: 'https://sass-lang.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -432,8 +309,8 @@ export const Config = {
             alias: 'less',
             language: 'css',
             name: 'LESS',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/less.svg',
+            link: 'http://lesscss.org/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -444,8 +321,8 @@ export const Config = {
             alias: 'symfony',
             language: 'php',
             name: 'Symfony',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/symfony.svg',
+            link: 'https://symfony.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -456,8 +333,20 @@ export const Config = {
             alias: 'zend',
             language: 'php',
             name: 'Zend',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/zend-framework.svg',
+            link: 'https://framework.zend.com/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'mysql',
+            language: 'database',
+            name: 'MySQL',
+            icon: 'assets/logos/mysql.svg',
+            link: 'https://www.mysql.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -468,8 +357,8 @@ export const Config = {
             alias: 'sqlite',
             language: 'database',
             name: 'SQLite',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/sqlite.svg',
+            link: 'https://www.sqlite.org/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -480,20 +369,8 @@ export const Config = {
             alias: 'mongodb',
             language: 'database',
             name: 'MongoDB',
-            icon: null,
-            link: null,
-            experienceWorth: 10,
-            description: {
-              de: '',
-              en: ''
-            }
-          },
-          {
-            alias: 'phpmyadmin',
-            language: 'database',
-            name: 'phpMyAdmin',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/mongodb.svg',
+            link: 'https://www.mongodb.com/',
             experienceWorth: 10,
             description: {
               de: '',
@@ -504,8 +381,8 @@ export const Config = {
             alias: 'jsonserver',
             language: 'database',
             name: 'JSON-Server',
-            icon: null,
-            link: null,
+            icon: 'assets/logos/json.svg',
+            link: 'https://github.com/typicode/json-server',
             experienceWorth: 10,
             description: {
               de: '',
@@ -513,9 +390,46 @@ export const Config = {
             }
           },
         ],
-        software: [],
-        elements: [],
-        usement: []
+        software: [
+          {
+            company: 'JetBrains',
+            icon: 'assets/logos/jetbrains-1.svg',
+            link: 'https://www.jetbrains.com/',
+            products: [
+              {
+                name: 'WebStorm',
+                icon: 'assets/logos/webstorm-icon.svg',
+                link: 'https://www.jetbrains.com/webstorm/',
+                experienceWorth: 10
+              },
+              {
+                name: 'PhpStorm',
+                icon: 'assets/logos/phpstorm-1.svg',
+                link: 'https://www.jetbrains.com/phpstorm/',
+                experienceWorth: 8
+              }
+            ],
+          },
+          {
+            company: 'Microsoft',
+            icon: 'assets/logos/microsoft.svg',
+            link: 'https://www.microsoft.com',
+            products: [
+              {
+                name: 'Visual Studio Community',
+                icon: 'assets/logos/visual-studio-2013.svg',
+                link: 'https://visualstudio.microsoft.com/vs/community/',
+                experienceWorth: 9
+              },
+              {
+                name: 'Visual Studio Code',
+                icon: 'assets/logos/visual-studio-code.svg',
+                link: 'https://code.visualstudio.com/',
+                experienceWorth: 9
+              }
+            ],
+          }
+        ],
       },
       {
         alias: 'graphix',
@@ -524,6 +438,10 @@ export const Config = {
         text: {
           de: 'Wegen meiner Leidenschaft zu Bild und Ton und meiner Begabung zur Gestaltung, habe ich mich 2007 dazu entschieden, eine Aubildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Aubildung hat mir einen optimalen Einstieg, u.a. als Grafiker in die digitale Medienwelt verschafft. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich sehr gut kann:',
           en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        },
+        toolText: {
+          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
+          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
         list: [
           {
@@ -584,75 +502,144 @@ export const Config = {
           },
 
         ],
+        programmingLanguages: [
+          {
+            alias: 'js',
+            name: 'JavaScript/TypeScript',
+            icon: 'assets/logos/javascript.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Web Animationen (2D & 3D)',
+              en: 'Web Animations (2D & 3D)',
+            }
+          },
+          {
+            alias: 'css',
+            name: 'CSS',
+            icon: 'assets/logos/css-3.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Web Animationen (2D & 3D)',
+              en: 'Web Animations (2D & 3D)',
+            }
+          },
+        ],
+        frameworks: [
+          {
+            alias: 'three',
+            language: 'js',
+            name: 'Three.js',
+            icon: 'assets/logos/javascript-4.svg',
+            link: 'https://threejs.org/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'd3',
+            language: 'js',
+            name: 'D3.js',
+            icon: 'assets/logos/d3-2.svg',
+            link: 'https://d3js.org/',
+            experienceWorth: 10,
+            description: {
+              de: 'D3.js ist eine JavaScript-Bibliothek zum Bearbeiten von Dokumenten basierend auf Daten',
+              en: 'D3.js is a JavaScript library for manipulating documents based on data'
+            }
+          },
+          {
+            alias: 'jQuery',
+            language: 'js',
+            name: 'jQuery',
+            icon: 'assets/logos/jquery-2.svg',
+            link: 'https://jquery.com/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'sass',
+            language: 'css',
+            name: 'SASS',
+            icon: 'assets/logos/node-sass.svg',
+            link: 'https://sass-lang.com/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'less',
+            language: 'css',
+            name: 'LESS',
+            icon: 'assets/logos/less.svg',
+            link: 'http://lesscss.org/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+        ],
         software: [
           {
-            alias: 'photoshop',
-            name: 'Adobe Photoshop',
-            icon: null,
-            link: null,
-            experienceWorth: 10,
-            description: {
-              de: 'Bildbearbeitung',
-              en: 'Image Editing'
-            }
+            company: 'Adobe',
+            icon: 'assets/logos/adobe-2.svg',
+            link: 'https://www.adobe.com/',
+            products: [
+              {
+                name: 'Photoshop',
+                icon: 'assets/logos/photoshop-cc.svg',
+                link: 'https://helpx.adobe.com/photoshop/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'Illustrator',
+                icon: 'assets/logos/adobe-illustrator-cc.svg',
+                link: 'https://helpx.adobe.com/illustrator/faq.html',
+                experienceWorth: 9
+              },
+              {
+                name: 'After-Effects',
+                icon: 'assets/logos/after-effects-cc.svg',
+                link: 'https://helpx.adobe.com/after-effects/faq.html',
+                experienceWorth: 9
+              },
+              {
+                name: 'InDesign',
+                icon: 'assets/logos/indesign-cc.svg',
+                link: 'https://helpx.adobe.com/indesign/faq.html',
+                experienceWorth: 6
+              },
+            ],
           },
           {
-            alias: 'illustrator',
-            name: 'Adobe Illustrator',
-            icon: null,
-            link: null,
-            experienceWorth: 10,
-            description: {
-              de: 'Vector Grafiken',
-              en: 'Vector Graphics'
-            }
-          },
-          {
-            alias: 'aftereffects',
-            name: 'Adobe After-Effects',
-            icon: null,
-            link: null,
-            experienceWorth: 8,
-            description: {
-              de: 'Video Postproduktion',
-              en: 'Video post production'
-            }
-          },
-          {
-            alias: 'premiere',
-            name: 'Adobe Premiere',
-            icon: null,
-            link: null,
-            experienceWorth: 10,
-            description: {
-              de: 'Video Schnitt',
-              en: 'Video cut'
-            }
-          },
-          {
-            alias: 'indisign',
-            name: 'Adobe InDesign',
-            icon: null,
-            link: null,
-            experienceWorth: 6,
-            description: {
-              de: 'Print Gestaltung',
-              en: 'Print Design'
-            }
-          },
-          {
-            alias: 'cubase',
-            name: 'Steinberg Cubase',
-            icon: null,
-            link: null,
-            experienceWorth: 9,
-            description: {
-              de: 'Musik-Produktion und Audio-Bearbeitung',
-              en: 'Music production and audio editing'
-            }
+            company: 'Toon Boom Animation Inc.',
+            icon: 'assets/logos/toonboom_logo.svg',
+            link: 'https://www.toonboom.com/',
+            products: [
+              {
+                name: 'Animate Pro',
+                icon: 'assets/logos/toonboom_logo.svg',
+                link: 'https://www.toonboom.com/news/toon-boom-animate-3-and-animate-pro-3-now-available',
+                experienceWorth: 8
+              },
+              {
+                name: 'Harmony',
+                icon: 'assets/logos/harmony17.svg',
+                link: 'https://www.toonboom.com/products/harmony',
+                experienceWorth: 7
+              }
+            ],
           }
-        ],
-        elements: []
+        ]
       },
       {
         alias: 'videoedit',
@@ -661,6 +648,10 @@ export const Config = {
         text: {
           de: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
           en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        },
+        toolText: {
+          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
+          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
         elements: []
       },
@@ -671,6 +662,10 @@ export const Config = {
         text: {
           de: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
           en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+        },
+        toolText: {
+          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
+          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
         elements: []
       }
@@ -1034,42 +1029,42 @@ export const Config = {
       alias: 'showroom',
       name: 'Show Room',
       description: {de: 'Eine kleine Sammlung an Demo-Projekten von mir', en: 'A small selection of my demo projects'},
-      image: 'assets/img/showroom.png',
+      image: 'assets/images/showroom.jpg',
       url: 'http://showroom.petzka.com/',
     },
     {
       alias: 'github',
       name: 'GitHub',
       description: {de: 'Mein GitHub Profil', en: 'My GitHub Account'},
-      image: 'assets/img/github.png',
+      image: 'assets/images/github.jpg',
       url: 'https://github.com/jodermo',
     },
     {
       alias: 'xing',
-      name: 'Mein Profil auf Xing',
-      description: {de: 'Onlinedienst für Software-Entwicklungsprojekte', en: 'Online service for software development projects'},
-      image: 'assets/img/xing.png',
+      name: 'Xing',
+      description: {de: 'Mein Xing Profil', en: 'My Xing Account'},
+      image: 'assets/images/xing.jpg',
       url: 'https://www.xing.com/profile/Moritz_Petzka',
     },
     {
       alias: 'freelancermap',
       name: 'freelancermap',
-      description: {de: 'Onlinedienst für Software-Entwicklungsprojekte', en: 'Online service for software development projects'},
-      image: 'assets/img/freelancermap.png',
+      description: {de: 'Mein Profil bei freelancermap.de', en: 'My Account on freelancermap.de'},
+      image: 'assets/images/freelancermap.jpg',
       url: 'https://www.freelancermap.de/profile/121861',
     },
     {
       alias: 'dasauge',
       name: 'dasauge',
-      description: {de: 'Onlinedienst für Software-Entwicklungsprojekte', en: 'Online service for software development projects'},
-      image: 'assets/img/dasauge.png',
+      description: {de: 'Mein Profil auf dasauge.de', en: 'My Account on freelancermap'},
+      image: 'assets/images/dasauge.jpg',
       url: 'https://dasauge.de/-moritz-petzka/',
     },
     {
       alias: 'soundcloud',
       name: 'SoundCloud',
       description: {de: 'SoundCloud', en: 'SoundCloud'},
-      image: 'assets/img/soundcloud.png',
+      image: 'assets/images/soundcloud.jpg',
       urls: [
         {
           title: 'midiVoltage',
@@ -1087,7 +1082,7 @@ export const Config = {
       alias: 'youtube',
       name: 'YouTube',
       description: {de: 'YouTube', en: 'YouTube'},
-      image: 'assets/img/youtube.png',
+      image: 'assets/images/youtube.jpg',
       urls: [
         {
           title: 'moFX2013',
@@ -1174,13 +1169,15 @@ export const Config = {
       image: 'assets/images/iElements_bg.jpg',
       logo: 'assets/images/ie-logo.png'
     },
-    {
-      name: 'c+s / ceramic + stein',
-      description: {de: 'Ihrer Welt der Markenfliesen', en: 'Ihrer Welt der Markenfliesen'},
-      website: 'http://www.ceramic-stein.de/',
-      image: 'assets/images/c+s_bg.jpg',
-      logo: 'assets/images/c+s.jpg'
-    },
+    /*
+{
+  name: 'c+s / ceramic + stein',
+  description: {de: 'Ihrer Welt der Markenfliesen', en: 'Ihrer Welt der Markenfliesen'},
+  website: 'http://www.ceramic-stein.de/',
+  image: 'assets/images/c+s_bg.jpg',
+  logo: 'assets/images/c+s.jpg'
+},
+     */
     {
       name: 'Underground Events',
       description: {de: 'Parties, Konzerte und Veranstaltungen', en: 'Parties, Concerts and Events'},
@@ -1216,13 +1213,15 @@ export const Config = {
       image: 'assets/images/temtra_bg.jpg',
       logo: 'assets/images/temtra_logo_negativ_neu.jpg'
     },
+    /*
     {
-      name: 'Albert Schweitzer Stiftung',
-      description: {de: 'Schutz und Rechte von Tieren', en: 'Schutz und Rechte von Tieren'},
-      website: 'http://albert-schweitzer-stiftung.de/',
-      image: 'assets/images/albert_schw_st_bg.jpg',
-      logo: 'assets/images/albert-schweitzer-stiftung-logo.png'
+    name: 'Albert Schweitzer Stiftung',
+    description: {de: 'Schutz und Rechte von Tieren', en: 'Schutz und Rechte von Tieren'},
+    website: 'http://albert-schweitzer-stiftung.de/',
+    image: 'assets/images/albert_schw_st_bg.jpg',
+    logo: 'assets/images/albert-schweitzer-stiftung-logo.png'
     },
+     */
     {
       name: 'Agentur für mehr Wert(e)',
       description: {de: 'Essen, Trinken und Tanzen', en: 'Essen, Trinken und Tanzen'},
@@ -1230,6 +1229,7 @@ export const Config = {
       image: 'assets/images/afmwe_bg.jpg',
       logo: 'assets/images/afmwe-logo.svg'
     },
+    /*
     {
       name: 'TSP Metallgestaltung',
       description: {de: 'Treppen und Geländer', en: 'Treppen und Geländer'},
@@ -1237,6 +1237,7 @@ export const Config = {
       image: 'assets/images/tsp_bg.jpg',
       logo: 'assets/images/tsp.png'
     },
+    */
   ],
   texts: [
     {
@@ -1266,8 +1267,8 @@ export const Config = {
     },
     {
       alias: 'link',
-      de: 'Link',
-      en: 'Link'
+      de: 'URL',
+      en: 'URL'
     },
     {
       alias: 'links',

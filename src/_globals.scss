@@ -1,7 +1,5 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 $ultra-hd_width: 2200px;
 $desktop_width: 1920px;
@@ -15,10 +13,10 @@ $font_size_mobile: 10px;
 
 
 $header-height: 5rem;
-$footer-height: 2rem;
+$footer-height: 3rem;
 
 $font-family-default: 'Roboto', sans-serif;
-$font-family-headline: 'Righteous', cursive;
+$font-family-headline: 'Fredoka One', cursive;
 $font-family-button: $font-family-headline;
 $font-family-highlight: $font-family-button;
 
@@ -88,9 +86,13 @@ $box-shadow-light-inset: 0 0 $font-size-small 0 $color-transparent-light inset;
 $box-shadow-light-large-inset: 0 0 $font-size-medium 0 $color-transparent-light inset;
 $text-shadow-light: 1px 0 $font-size-small $color-transparent-light;
 
-$content-wrapper-width: 900px;
+$content-wrapper-width: 30rem;
 $box-width: 30rem;
 $content-left-width: 40%;
 $content-right-width: 60%;
+$thumbnail-width: 15rem;
 $form-width: $box-width;
 $input-height: 2rem;
+$icon-size: 4rem;
+$icon-size-small: 2rem;
+$icon-size-large: 8rem;

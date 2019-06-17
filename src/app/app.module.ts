@@ -7,7 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './page/skills/skills.component';
 import { CustomersComponent } from './page/customers/customers.component';
 import { ToolsComponent } from './page/tools/tools.component';
 import { LinksComponent } from './page/links/links.component';
@@ -24,10 +23,6 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-  },
-  {
-    path: 'skills',
-    component: SkillsComponent,
   },
   {
     path: 'tools',
@@ -57,7 +52,6 @@ const routes: Routes = [
     LanguageSelectorComponent,
     HeaderComponent,
     FooterComponent,
-    SkillsComponent,
     CustomersComponent,
     ToolsComponent,
     LinksComponent,

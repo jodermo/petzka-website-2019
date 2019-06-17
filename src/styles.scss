@@ -34,8 +34,15 @@ body {
   font-size: $font-size-medium;
   line-height: $line-height-medium;
 
-  a {
-    color: $color-text;
+
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -280,6 +287,12 @@ button {
   }
 }
 
+ul {
+  li {
+    clear: both;
+  }
+}
+
 .table, table {
   width: 100%;
 
@@ -297,11 +310,62 @@ button {
   tbody {
     th {
       text-align: right;
+      border-right: 1px solid $color-transparent-dark;
     }
+
+    td, th {
+      border-bottom: 1px solid $color-transparent-dark;
+    }
+
+    &:not(:last-child) {
+      tr:last-child {
+        td, th {
+          border-bottom: none;
+        }
+      }
+    }
+
   }
 
   td, th {
     padding: $gap-small $gap-medium;
+    vertical-align: top;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      min-height: $icon-size-small;
+      padding: 0 0 $gap-small 0;
+
+      &:last-child {
+        padding: 0 0 0 0;
+      }
+    }
+  }
+
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: $icon-size;
+  height: $icon-size;
+  float: left;
+  margin-right: $gap-small;
+  max-height: 100%;
+
+  &.icon-small {
+    width: $icon-size-small;
+    height: $icon-size-small;
+  }
+
+  &.icon-large {
+    width: $icon-size-large;
+    height: $icon-size-large;
   }
 }
 
@@ -309,6 +373,7 @@ input, option {
   min-height: $input-height;
   line-height: $input-height;
   padding: 0 $gap-small;
+
 }
 
 textarea, select {
@@ -462,6 +527,7 @@ img, video, iframe {
   margin: 0 auto;
   text-align: center;
   vertical-align: center;
+  height: 100%;
 
   & > * {
     justify-self: center;
@@ -469,6 +535,17 @@ img, video, iframe {
     height: 100%;
     width: auto;
 
+  }
+
+  .ng-fa-icon {
+    height: 100%;
+    width: auto;
+    padding: $gap-small;
+
+    & > svg {
+      height: 100%;
+      width: auto;
+    }
   }
 
 }
@@ -494,7 +571,7 @@ img, video, iframe {
 
 .show-box-image {
   width: 100%;
-  max-width: 100%;
+  max-width: $thumbnail-width;
 }
 
 .show-box {
@@ -724,6 +801,7 @@ img, video, iframe {
 
 #footer {
   height: $footer-height;
+  padding: $gap-small 0;
   bottom: 0;
   left: 0;
 }

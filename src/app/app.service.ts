@@ -84,18 +84,24 @@ export class AppService {
   showContent(content: any) {
     this.currentContent = content;
     if (this.tabletWidth()) {
-      this.scrollToId('showBox', 250);
+      this.scrollToId('showBox', 50);
     }
     localStorage.setItem('currentContent', this.currentContent.alias);
   }
 
   showCustomer(customer: any) {
     this.currentCustomer = customer;
+    if (this.tabletWidth()) {
+      this.scrollToId('showBox', 50);
+    }
     localStorage.setItem('currentCustomer', this.currentCustomer.name);
   }
 
   showLink(link: any) {
     this.currentLink = link;
+    if (this.tabletWidth()) {
+      this.scrollToId('showBox', 50);
+    }
     localStorage.setItem('currentLink', this.currentLink);
   }
 

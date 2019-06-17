@@ -23,7 +23,7 @@ import { faPrint } from '@fortawesome/free-solid-svg-icons/faPrint';
 export class SocialMediaSharingComponent implements OnInit {
   @Input() url = null;
 
-  @Input() buttonSet = ['email', 'twitter', 'pinterest', 'linkedIn', 'digg', 'facebook', 'google+', 'reddit', 'stumbleUpon', 'tumblr', 'vk'];
+  @Input() buttonSet = ['email', 'twitter', 'pinterest', 'linkedIn', 'digg', 'facebook', 'reddit', 'tumblr'];
 
 
   fbIcon = faFacebookSquare;

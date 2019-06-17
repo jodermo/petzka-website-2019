@@ -22,44 +22,77 @@
       <p>{{app.text(box.toolText)}}</p>
     </div>
     <div class="show-box-list flex-item" *ngIf="box.list">
-      <table>
-        <thead>
+      <table class="table">
+        <thead *ngIf="box.software && box.software.length">
         <tr>
-          <th *ngIf="box.programmingLanguages && box.programmingLanguages.length">
-            <h2>{{app.textSnippet('programming_languages')}}</h2>
+          <th colspan="3">
+            {{app.textSnippet('software')}}
           </th>
-          <th *ngIf="box.software && box.software.length">
-            <h2>{{app.textSnippet('software')}}</h2>
+          <th>
+            {{app.textSnippet('experience_worth')}}
           </th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-          <td *ngIf="box.programmingLanguages && box.programmingLanguages.length">
+        <tbody *ngIf="box.software && box.software.length">
+        <tr *ngFor="let softW of box.software">
+          <th>
+            <img *ngIf="softW.icon" class="icon" [src]="softW.icon"/>
+            <a *ngIf="softW.link" href="{{softW.link}}" target="_blank">{{softW.company}}</a>
+            <span *ngIf="!softW.link">{{softW.company}}</span>
+          </th>
+          <td colspan="2">
             <ul>
-              <li *ngFor="let pLang of box.programmingLanguages">
-                <img *ngIf="pLang.icon" [src]="pLang.icon"/>
-                <span>
-            {{pLang.name}}
-          </span>
-                <ul *ngIf="box.frameworks && app.aliasObjects(box.frameworks, pLang.alias, 'language')">
-                  <li *ngFor="let fw of app.aliasObjects(box.frameworks, pLang.alias, 'language')">
-                    <img *ngIf="fw.icon" [src]="fw.icon"/>
-                    {{fw.name}}
-                  </li>
-                </ul>
+              <li *ngFor="let product of softW.products">
+                <img *ngIf="product.icon" class="icon icon-small" [src]="product.icon"/>
+                <a *ngIf="product.link" href="{{product.link}}" target="_blank">{{product.name}}</a>
+                <span *ngIf="!product.link">{{product.name}}</span>
+              </li>
+            </ul>
+
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let product of softW.products">
+                {{product.experienceWorth}}
               </li>
             </ul>
           </td>
-          <td *ngIf="box.software && box.software.length">
+        </tr>
+        </tbody>
+        <thead *ngIf="box.programmingLanguages && box.programmingLanguages.length">
+        <tr>
+          <th colspan="2">
+            {{app.textSnippet('programming_languages')}}
+          </th>
+          <th>
+            {{app.textSnippet('frameworks')}} / {{app.textSnippet('tools')}}
+          </th>
+          <th>
+            {{app.textSnippet('experience_worth')}}
+          </th>
+        </tr>
+        </thead>
+        <tbody *ngIf="box.programmingLanguages && box.programmingLanguages.length">
+        <tr *ngFor="let pLang of box.programmingLanguages">
+          <th>
+            <img *ngIf="pLang.icon" class="icon" [src]="pLang.icon"/>
+            {{pLang.name}}
+          </th>
+          <td>
+            {{app.text(pLang.description)}}
+          </td>
+          <td>
             <ul>
-              <li *ngFor="let softW of box.software">
-                <img *ngIf="softW.icon" [src]="softW.icon"/>
-                <span>
-                       {{softW.name}}
-            </span>
+              <li *ngFor="let fw of app.aliasObjects(box.frameworks, pLang.alias, 'language')">
+                <img *ngIf="fw.icon" class="icon icon-small" [src]="fw.icon"/>
+                <a *ngIf="fw.link" href="{{fw.link}}" target="_blank">{{fw.name}}</a>
+                <span *ngIf="!fw.link">{{fw.name}}</span>
               </li>
+              <li *ngIf="!app.aliasObjects(box.frameworks, pLang.alias, 'language').length"><span> - </span></li>
             </ul>
+          </td>
+          <td>
+            {{pLang.experienceWorth}}
           </td>
         </tr>
         </tbody>
