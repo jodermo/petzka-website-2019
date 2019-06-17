@@ -1,11 +1,16 @@
 <div class="social-media-buttons">
-  <div #github></div>
-  <a *ngIf="xingProfile" href="https://www.xing.com/profile/{{xingProfile}}" target="_blank" rel="me">
-    <img src="https://www.xing.com/img/buttons/1_de_btn.gif" width="85" height="23" alt="Moritz Petzka">
+  <a *ngIf="githubUser" href="https://github.com/{{githubUser}}" target="_blank" rel="me">
+    <fa-icon [icon]="githubIcon" size="lg"></fa-icon>
   </a>
-  <iframe *ngFor="let scLink of soundcloudLinks" allowtransparency="true" scrolling="no" frameborder="no"
-          [hidden]="!scLink"
-          [src]="scLink"
-          style="width: 32px; height: 32px;"></iframe>
+  <a *ngIf="xingProfile" href="https://www.xing.com/profile/{{xingProfile}}" target="_blank" rel="me">
+    <fa-icon [icon]="xingIcon" size="lg"></fa-icon>
+  </a>
+  <a *ngFor="let ytChannel of youtubeChannels" href="https://www.youtube.com/channel/{{ytChannel}}" target="_blank" rel="me">
+    <fa-icon [icon]="youtubeIcon" size="lg"></fa-icon>
+  </a>
+
+  <a *ngFor="let scUser of soundcloudUsers" href="https://soundcloud.com/{{scUser}}" target="_blank" rel="me">
+    <fa-icon [icon]="soundcloudIcon" size="lg"></fa-icon>
+  </a>
 
 </div>

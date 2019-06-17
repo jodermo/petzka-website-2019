@@ -7,6 +7,8 @@ export const Config = {
     location: {de: 'Köln / Bonn (Deutschland, NRW)', en: 'Cologne / Bonn (Germany, NRW)'},
     remote: {de: 'Weltweit via Home Office', en: 'worldwide via home office'},
     services: {de: 'Meine Dienstleistungen', en: 'My Services'},
+    shareSubject: {de: 'Webseite - Moritz Petzka (https://petzka.com)', en: 'Website - Moritz Petzka (https://petzka.com)'},
+    shareMessage: {de: 'Schaue dir mal diese Webseite an', en: 'Take a look at this website'},
     description: {
       de: '\nWillkommen! \n\nFreut mich, dass du auf meine Webseite gefunden hast. \n Mein Name ist Moritz Petzka, ich bin freiberuflicher Webentwickler, Medienschaffender und Künstler. \n Ich habe über 10 Jahre berufliche Erfahrung mit der Medienwelt und bin seit 2012 als freiberuflicher Softwareentwickler unterwegs. \n\nAuf dieser Webseite findest du einen kleinen Überblick über mich und meine Arbeit. \n\n',
       en: 'Programming, Graphic, Video Editing and Animation Design (2D & 3D)'
@@ -1281,6 +1283,11 @@ export const Config = {
       alias: 'used_technologies',
       de: 'Benutzte Technologien',
       en: 'Used technologies'
+    },
+    {
+      alias: 'share',
+      de: 'Teilen:',
+      en: 'Share:'
     }
   ]
 };

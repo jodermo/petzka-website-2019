@@ -1,6 +1,23 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AppService } from '../../app.service';
-import { render } from 'github-buttons';
+
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons/faFacebookSquare';
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons/faTwitterSquare';
+import { faPinterest } from '@fortawesome/free-brands-svg-icons/faPinterest';
+import { faDigg } from '@fortawesome/free-brands-svg-icons/faDigg';
+import { faGooglePlus } from '@fortawesome/free-brands-svg-icons/faGooglePlus';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faReddit } from '@fortawesome/free-brands-svg-icons/faReddit';
+import { faStumbleupon } from '@fortawesome/free-brands-svg-icons/faStumbleupon';
+import { faTumblr } from '@fortawesome/free-brands-svg-icons/faTumblr';
+import { faVk } from '@fortawesome/free-brands-svg-icons/faVK';
+import { faXing } from '@fortawesome/free-brands-svg-icons/faXing';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons/faSoundcloud';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
+
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
+import { faPrint } from '@fortawesome/free-solid-svg-icons/faPrint';
 
 @Component({
   selector: 'app-social-media-buttons',
@@ -12,13 +29,28 @@ export class SocialMediaButtonsComponent implements OnInit {
   @Input() xingProfile: string = null;
   @Input() freelancermap: string = null;
   @Input() dasauge: string = null;
-  @Input() youtube: string = null;
+  @Input() youtubeChannels: any[] = [];
   @Input() soundcloudUsers: any[] = [];
-  @Input() soundcloudColor: string;
   @Input() instagram: string = null;
   @Input() facebook: string = null;
   @Input() language = 'de';
-  @ViewChild('github', {static: true}) github: ElementRef;
+
+  fbIcon = faFacebookSquare;
+  pinIcon = faPinterest;
+  tweetIcon = faTwitterSquare;
+  diggIcon = faDigg;
+  emailIcon = faEnvelope;
+  googlePlusIcon = faGooglePlus;
+  linkedInIcon = faLinkedin;
+  prinIcon = faPrint;
+  redditIcon = faReddit;
+  stumbleuponIcon = faStumbleupon;
+  tumblrIcon = faTumblr;
+  vkIcon = faVk;
+  xingIcon = faXing;
+  githubIcon = faGithub;
+  soundcloudIcon = faSoundcloud;
+  youtubeIcon = faYoutube;
 
   soundcloudLinks = [];
 
@@ -26,23 +58,7 @@ export class SocialMediaButtonsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.initButtons();
-  }
 
-  initButtons() {
-    if (this.githubUser) {
-      render({href: 'https://github.com/' + this.githubUser}, (el) => {
-        if (this.github.nativeElement) {
-          this.github.nativeElement.appendChild(el);
-        }
-      });
-    }
-    if (this.soundcloudUsers) {
-      for (const scUser of this.soundcloudUsers) {
-        this.soundcloudLinks.push(this.app.secureURL('https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2F' + scUser + '&color=' + (this.soundcloudColor || 'orange_transparent') + '&size=32'));
-      }
-
-    }
   }
 
 

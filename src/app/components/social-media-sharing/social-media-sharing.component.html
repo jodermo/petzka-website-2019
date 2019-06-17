@@ -1,7 +1,77 @@
 <div class="social-media-buttons">
+  <!-- Print -->
+  <a *ngIf="available('print')" (click)="app.print()">
+    <fa-icon [icon]="prinIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Email -->
+  <a *ngIf="available('email')"
+     href="mailto:?Subject={{app.text(app.config.app.shareSubject)}}&amp;Body={{app.text(app.config.app.shareMessage)}}%20 {{(url || app.config.app.url)}}">
+    <fa-icon [icon]="emailIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Twitter -->
+  <a *ngIf="available('twitter')"
+     href="https://twitter.com/share?url={{(url || app.config.app.url)}}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons"
+     target="_blank">
+    <fa-icon [icon]="tweetIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Pinterest -->
+  <a *ngIf="available('pinterest')" (click)="shareOnPrintarest()">
+    <fa-icon [icon]="pinIcon" size="lg"></fa-icon>
+  </a>
 
 
-  <fa-icon [icon]="fbIcon" size="lg"></fa-icon>
-  <fa-icon [icon]="pinIcon" size="lg"></fa-icon>
-  <fa-icon [icon]="tweetIcon" size="lg"></fa-icon>
+  <!-- LinkedIn -->
+  <a *ngIf="available('linkedIn')"
+     href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{(url || app.config.app.url)}}" target="_blank">
+    <fa-icon [icon]="linkedInIcon" size="lg"></fa-icon>
+  </a>
+
+
+  <!-- Digg -->
+  <a *ngIf="available('digg')" href="http://www.digg.com/submit?url={{(url || app.config.app.url)}}" target="_blank">
+    <fa-icon [icon]="diggIcon" size="lg"></fa-icon>
+  </a>
+
+
+  <!-- Facebook -->
+  <a *ngIf="available('facebook')" href="http://www.facebook.com/sharer.php?u={{(url || app.config.app.url)}}"
+     target="_blank">
+    <fa-icon [icon]="fbIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Google+ -->
+  <a *ngIf="available('google+')" href="https://plus.google.com/share?url={{(url || app.config.app.url)}}"
+     target="_blank">
+    <fa-icon [icon]="googlePlusIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Reddit -->
+  <a *ngIf="available('reddit')"
+     href="http://reddit.com/submit?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons" target="_blank">
+    <fa-icon [icon]="redditIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- StumbleUpon-->
+  <a *ngIf="available('stumbleUpon')"
+     href="http://www.stumbleupon.com/submit?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons"
+     target="_blank">
+    <fa-icon [icon]="stumbleuponIcon" size="lg"></fa-icon>
+  </a>
+
+  <!-- Tumblr-->
+  <a *ngIf="available('tumblr')"
+     href="http://www.tumblr.com/share/link?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons"
+     target="_blank">
+    <fa-icon [icon]="tumblrIcon" size="lg"></fa-icon>
+  </a>
+
+
+  <!-- VK -->
+  <a *ngIf="available('vk')" href="http://vkontakte.ru/share.php?url={{(url || app.config.app.url)}}" target="_blank">
+    <fa-icon [icon]="vkIcon" size="lg"></fa-icon>
+  </a>
+
 </div>

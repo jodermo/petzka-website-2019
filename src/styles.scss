@@ -4,7 +4,6 @@
 @import "responsive";
 
 
-
 html, * {
   box-sizing: border-box;
   font-family: $font-family-default;
@@ -462,17 +461,29 @@ img, video, iframe {
   z-index: 10;
   margin: 0 auto;
   text-align: center;
+  vertical-align: center;
 
   & > * {
     justify-self: center;
+    margin-right: $gap-small;
+    height: 100%;
+    width: auto;
+
   }
 
 }
 
-#footer, .contact-form, .imprint {
+.contact-form, .imprint {
   .social-media-buttons {
     float: left;
     margin: 0;
+  }
+}
+
+#footer {
+  .social-media-buttons {
+    float: left;
+    margin: 0 0 0 $gap-small;
   }
 }
 

@@ -17,8 +17,6 @@ import { HomeComponent } from './page/home/home.component';
 import { HttpClient } from '@angular/common/http';
 import { SocialMediaButtonsComponent } from './components/social-media-buttons/social-media-buttons.component';
 import { SocialMediaSharingComponent } from './components/social-media-sharing/social-media-sharing.component';
-import { ShareModule } from '@ngx-share/core';
-import { ShareButtonComponent, ShareButtonModule, ShareButtonsFactory } from '@ngx-share/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -75,7 +73,6 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    ShareModule,
     RouterModule.forRoot(routes)
   ],
   providers: [HttpClient],

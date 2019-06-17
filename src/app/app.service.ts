@@ -36,6 +36,10 @@ export class AppService {
 
   }
 
+  print(){
+    window.print();
+  }
+
   width() {
     return window.innerWidth;
   }
