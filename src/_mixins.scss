@@ -1,0 +1,53 @@
+@mixin svgBackground($path, $color) {
+  background-color: $color;
+  -webkit-mask-image: url($path);
+  -moz-mask-image: url($path);
+  -o-mask-image: url($path);
+  mask-image: url($path);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+}
+
+
+@mixin font($family, $weight: 400, $style: normal) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($rule, $time, $ease) {
+  -webkit-transition: $rule $time $ease;
+  -moz-transition: $rule $time $ease;
+  -ms-transition: $rule $time $ease;
+  transitio: $rule $time $ease;
+}
+@mixin transition-delay($time) {
+  -webkit-transition-delay: $time;
+  -moz-transition-delay: $time;
+  -ms-transition-delay: $time;
+  transitio-delay: $time;
+}
+
+@mixin transform($style) {
+  -ms-transform: $style;
+    -moz-transform: $style;
+    -webkit-transform: $style;
+    transform: $style;
+}
+
+@mixin backface-visibility($style) {
+  -webkit-backface-visibility: $style;
+  -moz-backface-visibility: $style;
+  -ms-backface-visibility: $style;
+  backface-visibility: $style;
+}
+
+

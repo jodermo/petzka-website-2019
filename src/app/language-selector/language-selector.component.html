@@ -1,0 +1,5 @@
+<select [(ngModel)]="currLangAlias" (change)="app.setLanguage(currLangAlias)">
+  <option *ngFor="let language of app.languages" [value]="language.alias">
+    {{language.iso}}
+  </option>
+</select>

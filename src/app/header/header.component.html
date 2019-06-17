@@ -1,0 +1,7 @@
+
+<div class="page-navigation flex-box">
+  <a class="flex-item nav-item" *ngFor="let nav of navigation" routerLink="{{nav.link}}" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+    <span>{{app.text(nav.title)}}</span>
+  </a>
+  <app-language-selector class="flex-item nav-item passive"></app-language-selector>
+</div>

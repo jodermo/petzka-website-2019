@@ -1,0 +1,11 @@
+<div class="social-media-buttons">
+  <div #github></div>
+  <a *ngIf="xingProfile" href="https://www.xing.com/profile/{{xingProfile}}" target="_blank" rel="me">
+    <img src="https://www.xing.com/img/buttons/1_de_btn.gif" width="85" height="23" alt="Moritz Petzka">
+  </a>
+  <iframe *ngFor="let scLink of soundcloudLinks" allowtransparency="true" scrolling="no" frameborder="no"
+          [hidden]="!scLink"
+          [src]="scLink"
+          style="width: 32px; height: 32px;"></iframe>
+
+</div>

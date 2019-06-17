@@ -1,0 +1,7 @@
+<app-social-media-sharing></app-social-media-sharing>
+<div class="footer-navigation flex-box">
+  <a class="nav-item" *ngFor="let nav of navigation" routerLink="{{nav.link}}" [routerLinkActive]="['active']"
+     [routerLinkActiveOptions]="{exact: true}">
+    <span>{{app.text(nav.title)}}</span>
+  </a>
+</div>

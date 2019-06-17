@@ -1,0 +1,96 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto&display=swap');
+
+$ultra-hd_width: 2200px;
+$desktop_width: 1920px;
+$tablet_width: 1024px;
+$mobile_width: 420px;
+
+$font_size_ultra-hd: 20px;
+$font_size_desktop: 12px;
+$font_size_tablet: 12px;
+$font_size_mobile: 10px;
+
+
+$header-height: 5rem;
+$footer-height: 2rem;
+
+$font-family-default: 'Roboto', sans-serif;
+$font-family-headline: 'Righteous', cursive;
+$font-family-button: $font-family-headline;
+$font-family-highlight: $font-family-button;
+
+
+$color-brand-secondary: #222;
+$color-brand-secondary-hover: #222;
+$color-brand-secondary-active: #222;
+
+$color-brand-default: #222;
+$color-brand-default-hover: #2d9597;
+$color-brand-default-active: #3ec1c3;
+
+
+$color-background: #fafcd9;
+$color-background-hover: #a6a6a6;
+$color-background-active: #e4e4e4;
+$color-text: #222;
+$color-text-hover: #444;
+$color-text-active: #000;
+
+
+$color-ui-background: #222222;
+$color-ui-background-hover: #333333;
+$color-ui-background-active: #444444;
+$color-ui-text: #e8e8e8;
+$color-ui-text-hover: #fff;
+$color-ui-text-active: #fff;
+
+$color-ui-background: $color-text;
+$color-ui-background-hover: $color-text-hover;
+$color-ui-background-active: $color-text-active;
+$color-ui-text: $color-background-active;
+$color-ui-text-hover: $color-background-hover;
+$color-ui-text-active: $color-background-active;
+
+
+$color-transparent-dark: rgba(0, 0, 0, .5);
+$color-transparent-light: rgba(255, 255, 255, .25);
+
+$gap-small: .5rem;
+$gap-medium: 1rem;
+$gap-large: 1.5rem;
+
+$font-size-small: .8rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+$font-size-title: 2rem;
+$font-size-subtitle: 1.5rem;
+
+$line-height-small: 1.2rem;
+$line-height-medium: 1.55rem;
+$line-height-large: 1.95rem;
+$line-height-title: 2.7rem;
+$line-height-subtitle: 2.2rem;
+
+$animation-fast: .25s;
+$animation-default: .75s;
+$animation-slow: 1.5s;
+
+$box-shadow-small: 0 0 5px 0 $color-transparent-dark;
+$box-shadow-default: 0 0 $font-size-small 0 $color-transparent-dark;
+$box-shadow-default-inset: 0 0 $font-size-small 0 $color-transparent-dark inset;
+$text-shadow-default: 1px 0 2px #000;
+
+$box-shadow-light: 0 0 $font-size-small 0 $color-transparent-light;
+$box-shadow-light-inset: 0 0 $font-size-small 0 $color-transparent-light inset;
+$box-shadow-light-large-inset: 0 0 $font-size-medium 0 $color-transparent-light inset;
+$text-shadow-light: 1px 0 $font-size-small $color-transparent-light;
+
+$content-wrapper-width: 900px;
+$box-width: 30rem;
+$content-left-width: 40%;
+$content-right-width: 60%;
+$form-width: $box-width;
+$input-height: 2rem;

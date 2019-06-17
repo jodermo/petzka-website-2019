@@ -1,0 +1,69 @@
+<div class="page-element show-box" [ngClass]="{'content-left':(app.currentContent)}">
+  <div class="show-box-preview" *ngFor="let box of contents"
+       (click)="app.showContent(box);"
+       [ngClass]="{active:(app.currentContent === box)}">
+    <div class="show-box-background" [ngStyle]="{
+        background:'url(' +box.image+')',
+        backgroundSize:'cover',
+        backgroundPosition:'center'
+    }">
+      <h2>{{app.text(box.title)}}</h2>
+    </div>
+  </div>
+</div>
+<div id="showBox" class="show-box-content content-right"
+     [ngClass]="{active:(app.currentContent)}">
+  <div *ngFor="let box of contents" class="show-box-content-element flex-box column"
+       [ngClass]="{active:(app.currentContent === box)}">
+    <div class="show-box-title">
+      <h2>{{app.text(box.title)}}</h2>
+    </div>
+    <div class="show-box-text" *ngIf="box.toolText">
+      <p>{{app.text(box.toolText)}}</p>
+    </div>
+    <div class="show-box-list flex-item" *ngIf="box.list">
+      <table>
+        <thead>
+        <tr>
+          <th *ngIf="box.programmingLanguages && box.programmingLanguages.length">
+            <h2>{{app.textSnippet('programming_languages')}}</h2>
+          </th>
+          <th *ngIf="box.software && box.software.length">
+            <h2>{{app.textSnippet('software')}}</h2>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td *ngIf="box.programmingLanguages && box.programmingLanguages.length">
+            <ul>
+              <li *ngFor="let pLang of box.programmingLanguages">
+                <img *ngIf="pLang.icon" [src]="pLang.icon"/>
+                <span>
+            {{pLang.name}}
+          </span>
+                <ul *ngIf="box.frameworks && app.aliasObjects(box.frameworks, pLang.alias, 'language')">
+                  <li *ngFor="let fw of app.aliasObjects(box.frameworks, pLang.alias, 'language')">
+                    <img *ngIf="fw.icon" [src]="fw.icon"/>
+                    {{fw.name}}
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+          <td *ngIf="box.software && box.software.length">
+            <ul>
+              <li *ngFor="let softW of box.software">
+                <img *ngIf="softW.icon" [src]="softW.icon"/>
+                <span>
+                       {{softW.name}}
+            </span>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

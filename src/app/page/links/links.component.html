@@ -1,0 +1,52 @@
+<div class="page-element stretch-box show-box" [ngClass]="{'content-left-reverse':(app.currentLink)}">
+  <div class="show-box-preview" *ngFor="let link of links" (click)="app.showLink(link);"
+       [ngClass]="{active:(app.currentLink === link)}">
+    <div *ngIf="link.image" class="show-box-background" [ngStyle]="{
+        background:'url(' +link.image+')',
+        backgroundSize:'cover',
+        backgroundPosition:'center'
+    }">
+    </div>
+  </div>
+</div>
+<div id="showBox" class="show-box-content content-right-reverse"
+     [ngClass]="{active:(app.currentLink)}">
+  <div *ngFor="let link of links" class="show-box-content-element flex-box column"
+       [ngClass]="{active:(app.currentLink === link)}">
+    <div class="show-box-title">
+      <h2>{{link.name}}</h2>
+    </div>
+    <div class="show-box-image">
+      <div></div>
+      <a *ngIf="link.image && link.url" href="{{link.url}}" target="_blank">
+        <img [src]="link.image" alt="customer.name"/>
+      </a>
+      <img *ngIf="link.image&& !link.url" [src]="link.image" alt="customer.name"/>
+    </div>
+    <div class="show-box-text" *ngIf="link.description">
+      <h3>{{app.text(link.description)}}</h3>
+    </div>
+    <div class="show-box-link" *ngIf="link.url">
+      <label>
+        <span>
+              {{app.textSnippet('link')}}:
+        </span>
+        <a href="{{link.url}}" target="_blank"><b>{{link.url}}</b></a>
+      </label>
+    </div>
+    <div class="show-box-link" *ngIf="link.urls">
+      <label>
+        <span>
+              {{app.textSnippet('links')}}:
+        </span>
+        <ul>
+          <li *ngFor="let _link of link.urls">
+            <b *ngIf="_link.title">{{_link.title}}</b>
+            <p *ngIf="_link.description">{{app.text(_link.description)}}</p>
+            <a href="{{_link.url}}" target="_blank"><b>{{_link.url}}</b></a>
+          </li>
+        </ul>
+      </label>
+    </div>
+  </div>
+</div>

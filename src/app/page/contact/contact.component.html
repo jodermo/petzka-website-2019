@@ -1,0 +1,95 @@
+<div class="content-page">
+  <div class="content-wrapper">
+    <h1> {{app.text({de: 'Kontakt', en: 'Contact'})}}</h1>
+    <div class="form contact-form" [formGroup]="form">
+      <label>
+        <h2>Moritz Petzka</h2><br>
+        <span>DE-53117 Bonn {{app.text({de: '(NRW, Deutschland)', en: '(NRW, Germany)'})}} </span><br>
+        <a href="mailto:info@petzka.com">info@petzka.com</a>
+        <br> <br>
+        <app-social-media-buttons
+          [githubUser]="'jodermo'"
+          [xingProfile]="'Moritz_Petzka'"
+          [soundcloudUsers]="['user-452365221', 'midiVoltage']"
+        ></app-social-media-buttons>
+        <br>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Firma (optional)', en: 'Company (optional)'})}}</span>
+        <input id="company" class="form-control" formControlName="company"/>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Name', en: 'Name'})}}</span>
+        <input id="name" class="form-control" formControlName="name" required/>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+             class="alert alert-danger">
+          <div *ngIf="name.errors.required">
+            {{app.text({de: 'Name wird benötigt', en: 'Name is required'})}}
+          </div>
+        </div>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Email-Adresse', en: 'Email Address'})}}</span>
+        <input id="email" class="form-control" formControlName="email" required/>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+             class="alert alert-danger">
+          <div *ngIf="email.errors.required">
+            {{app.text({de: 'Email Adresse wird benötigt', en: 'Email Address is required'})}}
+          </div>
+          <div *ngIf="email.dirty">
+            {{app.text({de: 'Email Adresse falsch', en: 'wrong Email Address'})}}
+          </div>
+        </div>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Telefonnummer (optional)', en: 'Phone Number (optional)'})}}</span>
+        <input id="phone" type="phone" class="form-control" formControlName="phone"/>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Betreff', en: 'Subject'})}}</span>
+        <select id="subject" class="form-control" formControlName="subject" required>
+          <option *ngFor="let subject of subjects" [value]="subject.value">
+            {{app.text(subject.title)}}
+          </option>
+        </select>
+        <div *ngIf="subject.invalid && (subject.dirty || subject.touched)"
+             class="alert alert-danger">
+          <div *ngIf="subject.errors.required">
+            {{app.text({de: 'Bitte wähle einen Betreff aus', en: 'Choose a subject, please'})}}
+          </div>
+        </div>
+      </label>
+      <label>
+        <span>{{app.text({de: 'Nachricht', en: 'Message'})}}</span>
+        <textarea id="message" class="form-control" formControlName="message" required></textarea>
+        <div *ngIf="message.invalid && (message.dirty || message.touched)"
+             class="alert alert-danger">
+          <div *ngIf="message.errors.required">
+            {{app.text({de: 'Nachricht wird benötigt', en: 'Message is required'})}}
+          </div>
+        </div>
+      </label>
+      <label>
+        <button *ngIf="form.invalid" class="inactive">
+          <span>{{app.text({de: 'Nachricht Senden', en: 'Send Message'})}}</span>
+        </button>
+        <button *ngIf="!form.invalid" (click)="sendMessage()">
+          <span>{{app.text({de: 'Nachricht Senden', en: 'Send Message'})}}</span>
+        </button>
+      </label>
+      <div class="service-error" *ngIf="error">
+        <h1>{{error.errorTitle}}</h1>
+        <h3>{{error.errorDesc}}</h3>
+      </div>
+      <div [hidden]="!submitted" class="contact-message">
+        <div *ngIf="form.id" class="contact-success">
+          <h2 class="success">Success!</h2>
+          <h4>Contact form has been successfully submitted.</h4>
+          <br/>
+          <button (click)="error" class="btn btn-info">Go to Home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
