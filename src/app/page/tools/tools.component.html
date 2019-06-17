@@ -1,6 +1,6 @@
 <div class="page-element show-box" [ngClass]="{'content-left':(app.currentContent)}">
   <div class="show-box-preview" *ngFor="let box of contents"
-       (click)="app.showContent(box);"
+       (click)="app.showContent(box, true);"
        [ngClass]="{active:(app.currentContent === box)}">
     <div class="show-box-background" [ngStyle]="{
         background:'url(' +box.image+')',

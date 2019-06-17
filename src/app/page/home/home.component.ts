@@ -15,11 +15,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.app.currentContent) {
-      setTimeout(() => {
-        this.app.currentContent = null;
-      }, 100);
-    }
   }
 
 }

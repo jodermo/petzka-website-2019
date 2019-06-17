@@ -36,7 +36,7 @@ export class AppService {
 
   }
 
-  print(){
+  print() {
     window.print();
   }
 
@@ -81,12 +81,18 @@ export class AppService {
     this.currentContent = null;
   }
 
-  showContent(content: any) {
-    this.currentContent = content;
-    if (this.tabletWidth()) {
-      this.scrollToId('showBox', 50);
+  showContent(content: any, toggle: boolean = false) {
+    if (toggle && this.currentContent === content) {
+      this.currentContent = null;
+      localStorage.removeItem('currentContent');
+    } else {
+      this.currentContent = content;
+      if (this.tabletWidth()) {
+        this.scrollToId('showBox', 50);
+      }
+      localStorage.setItem('currentContent', this.currentContent.alias || null);
     }
-    localStorage.setItem('currentContent', this.currentContent.alias);
+
   }
 
   showCustomer(customer: any) {

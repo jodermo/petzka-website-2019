@@ -10,8 +10,12 @@ export const Config = {
     shareSubject: {de: 'Webseite - Moritz Petzka (https://petzka.com)', en: 'Website - Moritz Petzka (https://petzka.com)'},
     shareMessage: {de: 'Schaue dir mal diese Webseite an', en: 'Take a look at this website'},
     description: {
-      de: '\nWillkommen! \n\nFreut mich, dass du auf meine Webseite gefunden hast. \n Mein Name ist Moritz Petzka, ich bin freiberuflicher Webentwickler, Medienschaffender und Künstler. \n Ich habe über 10 Jahre berufliche Erfahrung mit der Medienwelt und bin seit 2012 als freiberuflicher Softwareentwickler unterwegs. \n\nAuf dieser Webseite findest du einen kleinen Überblick über mich und meine Arbeit. \n\n',
-      en: 'Programming, Graphic, Video Editing and Animation Design (2D & 3D)'
+      de: 'Willkommen, \nFreut mich, dass du auf meine Webseite gefunden hast! \n Mein Name ist Moritz Petzka, ich bin freiberuflicher Webentwickler, Medienschaffender und Künstler. \n\nAuf dieser Webseite findest du einen Überblick über mich und meine Arbeit. \n\n',
+      en: 'Welcome, \n' +
+        'Glad you found my website!\n' +
+        '  My name is Moritz Petzka, I\'m a freelance web developer, media creator and artist.\n' +
+        '\n' +
+        'On this website you will find a overview of me and my work.'
     },
     email: 'info@petzka.com',
     emailSubject: {de: 'Anfrage', en: 'Inquiry'},
@@ -35,8 +39,8 @@ export const Config = {
         title: {de: 'Webentwicklung', en: 'Web Development'},
         image: 'assets/images/webdev.jpg',
         text: {
-          de: 'Angefangen, damals noch als Mediengestalter (als Azubi) und Flash-Entwickler, kann ich Heute, auf über 10 Jahre Berufserfahrung im Online-Bereich zurück blicken. \n Durch meine Begeisterung an der Arbeit, habe ich über die Jahre so einige Programmiersprachen, Frameworks und nützliche Softwares kennen, können und lieben gelernt. \nMittlerweile bin ich in der Lage, so gut wie jede Aufgabe zum gewünschten Ziel zu bringen. \n Ob einfache Webseite oder komplexe Unternehmens-Webseite, Online-Shop, Mobile-App, Online-Werbung, Visualisierung von Daten, Bühnen-Präsentationen oder Messe-Exponaten, Ich habe eigentlich fast alles schon mal entwickelt. \n\nSie benötigen unterstützung bei einem Projekt? \nHier eine Liste mit Dienstleistungen die ich anbiete:',
-          en: 'Starting as a media designer (as apprentice) and flash developer at the time, today I can look back on over 10 years of professional experience in the online sector. \nOver the years I have come to know, control, and love so many programming languages, frameworks, and useful softwares. \nMeanwhile, I am able to bring almost any task to the desired destination. Whether it\'s a simple website or a complex corporate website, online shop, mobile app, online advertising, visualization of data, stage presentations or trade fair exhibits, I\'ve actually developed almost everything before. \n\nYou need assistance with a project? Here is a list of services I offer:'
+          de: 'Damals noch als Mediengestalter und Flash-Entwickler angefangen, kann ich Heute, auf über 10 Jahre Berufserfahrung im Online-Bereich zurück blicken. \n Durch meine Begeisterung an der Arbeit, habe ich über die Jahre einige Programmiersprachen, Frameworks und nützliche Softwares kennen, können und lieben gelernt. \nMittlerweile bin ich in der Lage, so gut wie jede Aufgabe zum gewünschten Ziel zu bringen. \n Ob einfache Webseite oder komplexe Unternehmens-Webseite, Online-Shop, Mobile-App, Online-Werbung, Visualisierung von Daten, Bühnen-Präsentationen oder Messe-Exponaten, Ich habe eigentlich fast alles schon mal entwickelt. \n\nSie benötigen unterstützung bei einem Projekt? \nHier eine Liste mit Dienstleistungen die ich anbiete:',
+          en: 'Starting at the time as a media designer and flash developer, today I can look back on over 10 years of professional experience in the online sector. \nOver the years I have come to know, control, and love so many programming languages, frameworks, and useful softwares. \nMeanwhile, I am able to bring almost any task to the desired destination. Whether it\'s a simple website or a complex corporate website, online shop, mobile app, online advertising, visualization of data, stage presentations or trade fair exhibits, I\'ve actually developed almost everything before. \n\nYou need assistance with a project? Here is a list of services I offer:'
         },
         toolText: {
           de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
@@ -436,8 +440,12 @@ export const Config = {
         title: {de: 'Grafik & Animation', en: 'Graphic & Animation'},
         image: 'assets/images/gfx.jpg',
         text: {
-          de: 'Wegen meiner Leidenschaft zu Bild und Ton und meiner Begabung zur Gestaltung, habe ich mich 2007 dazu entschieden, eine Aubildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Aubildung hat mir einen optimalen Einstieg, u.a. als Grafiker in die digitale Medienwelt verschafft. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich sehr gut kann:',
-          en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+          de: 'Durch meine Leidenschaft für Medien in Bild und Ton und meiner gestalterischen Begabungg, habe ich mich 2007 dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler verschafft. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich beherrsche:',
+          en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
+            'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
+            'To this day, designing and editing visual media is a great passion of mine. In connection with another suffering, the programming, I have been able to expand my know-how over the last years, especially in the field of animation and 3D design.\n' +
+            '\n' +
+            'Here is a list of things I do:',
         },
         toolText: {
           de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
@@ -621,6 +629,44 @@ export const Config = {
             ],
           },
           {
+            company: 'Autodesk',
+            icon: 'assets/logos/autodesk-4.svg',
+            link: 'https://www.autodesk.de/',
+            products: [
+              {
+                name: 'Maya',
+                icon: 'assets/logos/maya-2017.svg',
+                link: 'https://www.autodesk.de/products/maya/overview',
+                experienceWorth: 8
+              },
+              {
+                name: 'Mudbox',
+                icon: 'assets/logos/mudbox-1.svg',
+                link: 'https://www.autodesk.com/products/mudbox/overview',
+                experienceWorth: 8
+              },
+              {
+                name: '3ds Max',
+                icon: 'assets/logos/3ds-max-full.svg',
+                link: 'https://www.autodesk.de/products/3ds-max/overview',
+                experienceWorth: 6
+              }
+            ],
+          },
+          {
+            company: 'Blender',
+            icon: 'assets/logos/blender.svg',
+            link: 'hhttps://www.blender.org/',
+            products: [
+              {
+                name: 'Blender',
+                icon: 'assets/logos/blender-1.svg',
+                link: 'https://www.blender.org/about/',
+                experienceWorth: 7
+              },
+            ],
+          },
+          {
             company: 'Toon Boom Animation Inc.',
             icon: 'assets/logos/toonboom_logo.svg',
             link: 'https://www.toonboom.com/',
@@ -646,28 +692,348 @@ export const Config = {
         title: {de: 'Video-Bearbeitung', en: 'Video Editing'},
         image: 'assets/images/vfx.jpg',
         text: {
-          de: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-          en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+          de: 'Durch meine Leidenschaft für Medien in Bild und Ton und meiner gestalterischen Begabungg, habe ich mich 2007 dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler verschafft. \nNeben meiner Tätigkeit als Grafiker und Entwickler, habe ich mich schon immer gerne mit der Produktion von Videos beschäftigt. \n\nHier eine Liste von Dingen die ich beherrsche:',
+          en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
+            'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
+            'In addition to my work as a graphic designer and developer, the production of videos is a great passion of mine.\n' +
+            '\n' +
+            'Here is a list of things I do:',
         },
         toolText: {
           de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
           en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
-        elements: []
+        list: [
+          {
+            title: {de: 'Viedoschnitt', en: 'Video Editing'},
+            description: {
+              de: 'Videoschnitt, Bearbeitung und Dramaturgische Gestaltung',
+              en: 'Video editing and dramaturgical design'
+            },
+          },
+          {
+            title: {de: 'Postproduktion', en: 'Post Production'},
+            description: {
+              de: 'Video-Effekte, Musik- und Soundeffekte, Animationen, Einblendungen und Nachbearbeitung',
+              en: 'Video effects, music and sound effects, animations, fade-ins and post-processing'
+            },
+          },
+          {
+            title: {de: 'VFX / Motion-Design', en: 'VFX / Motion Design'},
+            description: {
+              de: '2D und 3D Animationen',
+              en: '2D und 3D animations',
+            },
+          },
+          {
+            title: {de: 'Sound-Design', en: 'Sound Design'},
+            description: {
+              de: 'Dramaturgische Gestaltung mit Musik- und Soundeffekten',
+              en: 'Dramaturgical composition with music and sound effects',
+            },
+          },
+        ],
+        programmingLanguages: [
+          {
+            alias: 'js',
+            name: 'JavaScript/TypeScript',
+            icon: 'assets/logos/javascript.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Interaktive Video-Interfaces',
+              en: 'Interactive video interfaces'
+            }
+          },
+          {
+            alias: 'html',
+            name: 'HTML',
+            icon: 'assets/logos/html5.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Interaktive Video-Interfaces',
+              en: 'Interactive video interfaces'
+            }
+          },
+        ],
+        frameworks: [
+          {
+            alias: 'three',
+            language: 'js',
+            name: 'Three.js',
+            icon: 'assets/logos/javascript-4.svg',
+            link: 'https://threejs.org/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+        ],
+        software: [
+          {
+            company: 'Adobe',
+            icon: 'assets/logos/adobe-2.svg',
+            link: 'https://www.adobe.com/',
+            products: [
+              {
+                name: 'Photoshop',
+                icon: 'assets/logos/photoshop-cc.svg',
+                link: 'https://helpx.adobe.com/photoshop/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'Illustrator',
+                icon: 'assets/logos/adobe-illustrator-cc.svg',
+                link: 'https://helpx.adobe.com/illustrator/faq.html',
+                experienceWorth: 9
+              },
+              {
+                name: 'Premiere',
+                icon: 'assets/logos/premiere-cc.svg',
+                link: 'https://helpx.adobe.com/premiere/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'After-Effects',
+                icon: 'assets/logos/after-effects-cc.svg',
+                link: 'https://helpx.adobe.com/after-effects/faq.html',
+                experienceWorth: 9
+              },
+            ],
+          },
+          {
+            company: 'Autodesk',
+            icon: 'assets/logos/autodesk-4.svg',
+            link: 'https://www.autodesk.de/',
+            products: [
+              {
+                name: 'Maya',
+                icon: 'assets/logos/maya-2017.svg',
+                link: 'https://www.autodesk.de/products/maya/overview',
+                experienceWorth: 8
+              },
+              {
+                name: 'Mudbox',
+                icon: 'assets/logos/mudbox-1.svg',
+                link: 'https://www.autodesk.com/products/mudbox/overview',
+                experienceWorth: 8
+              },
+              {
+                name: '3ds Max',
+                icon: 'assets/logos/3ds-max-full.svg',
+                link: 'https://www.autodesk.de/products/3ds-max/overview',
+                experienceWorth: 6
+              }
+            ],
+          },
+          {
+            company: 'Toon Boom Animation Inc.',
+            icon: 'assets/logos/toonboom_logo.svg',
+            link: 'https://www.toonboom.com/',
+            products: [
+              {
+                name: 'Animate Pro',
+                icon: 'assets/logos/toonboom_logo.svg',
+                link: 'https://www.toonboom.com/news/toon-boom-animate-3-and-animate-pro-3-now-available',
+                experienceWorth: 8
+              },
+              {
+                name: 'Harmony',
+                icon: 'assets/logos/harmony17.svg',
+                link: 'https://www.toonboom.com/products/harmony',
+                experienceWorth: 7
+              }
+            ],
+          }
+        ]
       },
       {
         alias: 'art',
         title: {de: 'Kunst & Musik', en: 'Art & Music'},
         image: 'assets/images/art.jpg',
         text: {
-          de: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-          en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+          de: 'Als Sohn einer Künstlerin und eines Kundhandwerkers, wurde mir das krative arbeiten schon mit in die Wiege gelegt. \n In meiner Kindheit bin ich zu Waldorfschule gegangen, dort wurde kreatives schaffen und Kunst zusätzlich sehr gefördert.\n Bis heute sind künstlerische Tätigkeiten ein Hauptbestandteil in meinem Leben und es gibt eigentlich nichts das ich lieber tue. \nIch bin immer auf der suche nach neuen Methoden mich kreativ zu betätigen, da ist es egal ob es sich um Musik, Vieos, Malen, Zeichen oder Handwerkliche dinge dreht. \n\nHier eine liste mit künstlerischen aktivitäten denen ich über die Jahre nachgegangen bin:',
+          en: 'As the son of an artist and a art craftsman, I was involved in the creative work, since my birth.\n' +
+            'In my childhood, I went to Waldorf School, where creative work and art was very promoted, too.\n' +
+            'Till now, artistic activities are a major part of my life and there\'s as good as nothing I\'d rather do.\n' +
+            'I\'m always on the lookout for new ways to be creative, it does not matter if it\'s about music, movies, painting, drawing or craftsmanship.\n' +
+            '\n' +
+            'Here is a list of artistic activities I have followed in the past:',
         },
         toolText: {
           de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
           en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
         },
-        elements: []
+        list: [
+          {
+            title: {de: 'Musikproduktion (digital)', en: 'Musik Producttion (digital)'},
+            description: {
+              de: 'Digitale Musikproduktion (verschiedene electro-genres)',
+              en: 'Digital music production (various electro-genres)'
+            },
+          },
+          {
+            title: {de: 'Analoge Synthesizer Musik', en: 'Analoge Synthesizer Musik'},
+            description: {
+              de: 'Elektronische Musik auf analogen Synthesizern',
+              en: 'Electronic music on analog synthesizers'
+            },
+          },
+          {
+            title: {de: 'Storyboard & Scribbles', en: 'Storyboard & Scribbles'},
+            description: {
+              de: 'Drehbücher und Konzepte in Bildern',
+              en: 'Scripts and concepts in pictures'
+            },
+          },
+          {
+            title: {de: 'Klassisches Malen Und Zeichnen', en: 'Classical Painting And Drawing'},
+            description: {
+              de: 'Portraits, Stillleben, Landschaftsbilder, etc.',
+              en: 'Portraits, still lifes, landscapes, etc.'
+            },
+          },
+          {
+            title: {de: 'Airbrush', en: 'Airbrush'},
+            description: {
+              de: 'Malen mit Druckluft, Spritzpistole und Schablonen',
+              en: 'Painting with compressed air, spray gun and stencils'
+            },
+          },
+          {
+            title: {de: 'Tattoo', en: 'Tattoo'},
+            description: {
+              de: 'Malen mit Druckluft, Spritzpistole und Schablonen',
+              en: 'Painting with compressed air, spray gun and stencils'
+            },
+          },
+        ],
+        programmingLanguages: [],
+        frameworks: [],
+        software: [
+          {
+            company: 'Steinberg',
+            icon: 'assets/logos/steinberg-sx.svg',
+            link: 'https://www.toonboom.com/',
+            products: [
+              {
+                name: 'Cubase',
+                icon: 'assets/logos/cubase.png',
+                link: 'https://new.steinberg.net/cubase/',
+                experienceWorth: 10
+              },
+              {
+                name: 'Nuendo',
+                icon: 'assets/logos/nuendo.png',
+                link: 'https://new.steinberg.net/nuendo/',
+                experienceWorth: 9
+              },
+              {
+                name: 'Wavelab',
+                icon: 'assets/logos/wavelab.png',
+                link: 'https://www.steinberg.net/products/wavelab/start.html',
+                experienceWorth: 6
+              }
+            ],
+          },
+          {
+            company: 'Ableton',
+            icon: 'assets/logos/ableton.svg',
+            link: 'https://www.ableton.com/',
+            products: [
+              {
+                name: 'Ableton Live',
+                icon: 'assets/logos/ableton-1.svg',
+                link: 'https://www.ableton.com/live/',
+                experienceWorth: 8
+              }
+            ],
+          },
+          {
+            company: 'Toon Boom Animation Inc.',
+            icon: 'assets/logos/toonboom_logo.svg',
+            link: 'https://www.toonboom.com/',
+            products: [
+              {
+                name: 'Animate Pro',
+                icon: 'assets/logos/toonboom_logo.svg',
+                link: 'https://www.toonboom.com/news/toon-boom-animate-3-and-animate-pro-3-now-available',
+                experienceWorth: 8
+              },
+              {
+                name: 'Harmony',
+                icon: 'assets/logos/harmony17.svg',
+                link: 'https://www.toonboom.com/products/harmony',
+                experienceWorth: 7
+              }
+            ],
+          },
+          {
+            company: 'Adobe',
+            icon: 'assets/logos/adobe-2.svg',
+            link: 'https://www.adobe.com/',
+            products: [
+              {
+                name: 'Photoshop',
+                icon: 'assets/logos/photoshop-cc.svg',
+                link: 'https://helpx.adobe.com/photoshop/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'Illustrator',
+                icon: 'assets/logos/adobe-illustrator-cc.svg',
+                link: 'https://helpx.adobe.com/illustrator/faq.html',
+                experienceWorth: 9
+              },
+              {
+                name: 'After-Effects',
+                icon: 'assets/logos/after-effects-cc.svg',
+                link: 'https://helpx.adobe.com/after-effects/faq.html',
+                experienceWorth: 9
+              }
+            ],
+          },
+          {
+            company: 'Autodesk',
+            icon: 'assets/logos/autodesk-4.svg',
+            link: 'https://www.autodesk.de/',
+            products: [
+              {
+                name: 'Maya',
+                icon: 'assets/logos/maya-2017.svg',
+                link: 'https://www.autodesk.de/products/maya/overview',
+                experienceWorth: 8
+              },
+              {
+                name: 'Mudbox',
+                icon: 'assets/logos/mudbox-1.svg',
+                link: 'https://www.autodesk.com/products/mudbox/overview',
+                experienceWorth: 8
+              },
+              {
+                name: '3ds Max',
+                icon: 'assets/logos/3ds-max-full.svg',
+                link: 'https://www.autodesk.de/products/3ds-max/overview',
+                experienceWorth: 6
+              }
+            ],
+          },
+          {
+            company: 'Blender',
+            icon: 'assets/logos/blender.svg',
+            link: 'hhttps://www.blender.org/',
+            products: [
+              {
+                name: 'Blender',
+                icon: 'assets/logos/blender-1.svg',
+                link: 'https://www.blender.org/about/',
+                experienceWorth: 7
+              },
+            ],
+          },
+        ]
       }
     ]
   },
