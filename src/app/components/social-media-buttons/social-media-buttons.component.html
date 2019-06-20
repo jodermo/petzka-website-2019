@@ -1,16 +1,17 @@
 <div class="social-media-buttons">
-  <a *ngIf="githubUser" href="https://github.com/{{githubUser}}" target="_blank" rel="me">
-    <fa-icon [icon]="githubIcon" size="lg"></fa-icon>
-  </a>
-  <a *ngIf="xingProfile" href="https://www.xing.com/profile/{{xingProfile}}" target="_blank" rel="me">
+  <a *ngIf="accounts.xing" href="https://www.xing.com/profile/{{accounts.xing}}" target="_blank" rel="me">
     <fa-icon [icon]="xingIcon" size="lg"></fa-icon>
   </a>
-  <a *ngFor="let ytChannel of youtubeChannels" href="https://www.youtube.com/channel/{{ytChannel}}" target="_blank" rel="me">
-    <fa-icon [icon]="youtubeIcon" size="lg"></fa-icon>
+  <a *ngIf="accounts.linkedin" href="https://www.linkedin.com/in/{{accounts.linkedin}}" target="_blank" rel="me">
+    <fa-icon [icon]="linkedInIcon" size="lg"></fa-icon>
   </a>
-
-  <a *ngFor="let scUser of soundcloudUsers" href="https://soundcloud.com/{{scUser}}" target="_blank" rel="me">
-    <fa-icon [icon]="soundcloudIcon" size="lg"></fa-icon>
+  <a *ngIf="accounts.github" href="https://github.com/{{accounts.github}}" target="_blank" rel="me">
+    <fa-icon [icon]="githubIcon" size="lg"></fa-icon>
   </a>
-
+  <a *ngIf="accounts.bitbucket" href="https://bitbucket.com/{{accounts.bitbucket}}" target="_blank" rel="me">
+    <fa-icon [icon]="bitbucketIcon" size="lg"></fa-icon>
+  </a>
+  <a *ngIf="accounts.docker" href="https://hub.docker.com/u/{{accounts.docker}}" target="_blank" rel="me">
+    <fa-icon [icon]="dockerIcon" size="lg"></fa-icon>
+  </a>
 </div>

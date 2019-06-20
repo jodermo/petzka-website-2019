@@ -16,6 +16,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faSoundcloud } from '@fortawesome/free-brands-svg-icons/faSoundcloud';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
 
+import { faDochub } from '@fortawesome/free-brands-svg-icons/faDochub';
+import { faBitbucket } from '@fortawesome/free-brands-svg-icons/faBitbucket';
+
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import { faPrint } from '@fortawesome/free-solid-svg-icons/faPrint';
 
@@ -25,14 +28,7 @@ import { faPrint } from '@fortawesome/free-solid-svg-icons/faPrint';
   styleUrls: ['./social-media-buttons.component.css']
 })
 export class SocialMediaButtonsComponent implements OnInit {
-  @Input() githubUser: string = null;
-  @Input() xingProfile: string = null;
-  @Input() freelancermap: string = null;
-  @Input() dasauge: string = null;
-  @Input() youtubeChannels: any[] = [];
-  @Input() soundcloudUsers: any[] = [];
-  @Input() instagram: string = null;
-  @Input() facebook: string = null;
+  @Input() accounts: any = {};
   @Input() language = 'de';
 
   fbIcon = faFacebookSquare;
@@ -51,6 +47,8 @@ export class SocialMediaButtonsComponent implements OnInit {
   githubIcon = faGithub;
   soundcloudIcon = faSoundcloud;
   youtubeIcon = faYoutube;
+  dockerIcon = faDochub;
+  bitbucketIcon = faBitbucket;
 
   soundcloudLinks = [];
 

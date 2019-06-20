@@ -2,7 +2,7 @@
 
 $angularJSData = json_decode(file_get_contents("php://input"));
 $data = (array)$angularJSData;
-
+$captcherSecretKey = '6LfnaqkUAAAAAAaIKmxsZmGg0bP3QHIZEf5XxmdR';
 $company = $data['company'];
 $name = $data['name'];
 $email = $data['email'];

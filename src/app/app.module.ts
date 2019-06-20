@@ -1,9 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
+import { RecaptchaModule } from 'ng-recaptcha';
+
+
+import { AppComponent } from './app.component';
 import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,10 +18,11 @@ import { LinksComponent } from './page/links/links.component';
 import { ImprintComponent } from './page/imprint/imprint.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { HomeComponent } from './page/home/home.component';
-import { HttpClient } from '@angular/common/http';
+
 import { SocialMediaButtonsComponent } from './components/social-media-buttons/social-media-buttons.component';
 import { SocialMediaSharingComponent } from './components/social-media-sharing/social-media-sharing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExperienceWorthComponent } from './components/experience-worth/experience-worth.component';
 
 
 const routes: Routes = [
@@ -44,6 +50,7 @@ const routes: Routes = [
     path: 'imprint',
     component: ImprintComponent,
   },
+  { path: '**',   redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -59,7 +66,8 @@ const routes: Routes = [
     ContactComponent,
     HomeComponent,
     SocialMediaButtonsComponent,
-    SocialMediaSharingComponent
+    SocialMediaSharingComponent,
+    ExperienceWorthComponent
   ],
   imports: [
     FontAwesomeModule,
@@ -67,6 +75,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    RecaptchaModule,
     RouterModule.forRoot(routes)
   ],
   providers: [HttpClient],

@@ -1,12 +1,12 @@
-<header id="header">
+<header id="header" [hidden]="app.loading">
   <app-header></app-header>
 </header>
-<main id="main">
+<main id="main" [ngClass]="{loading:loading}">
   <div class="inside">
     <router-outlet></router-outlet>
   </div>
 </main>
-<footer id="footer">
+<footer id="footer" [hidden]="app.loading">
   <app-footer></app-footer>
 </footer>
 

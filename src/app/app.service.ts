@@ -17,14 +17,22 @@ export class AppService {
   languages = Config.languages;
   currentLanguage = this.languages[0];
   errorData: {};
-  contents = Config.startPage.contents;
+  contents = Config.content.contents;
   currentContent;
   currentCustomer;
   currentLink;
+  loading = true;
 
   constructor(private http: Http, private sanitizer: DomSanitizer) {
     if (localStorage.getItem('currentLanguage')) {
       this.setLanguage(localStorage.getItem('currentLanguage'));
+    } else {
+      const language = navigator['language'] || navigator['userLanguage'] || this.config.fallbackLanguage;
+      for (const lang of this.config.languages) {
+        if (lang.alias === language) {
+          this.setLanguage(language);
+        }
+      }
     }
     if (localStorage.getItem('currentContent')) {
       this.showContentByAlias(localStorage.getItem('currentContent'));
@@ -35,6 +43,7 @@ export class AppService {
   destroy() {
 
   }
+
 
   print() {
     window.print();
@@ -72,6 +81,10 @@ export class AppService {
     return (this.width() > this.height());
   }
 
+  urlString(str: string) {
+    return encodeURIComponent(str);
+  }
+
   showContentByAlias(alias: string) {
     const aliasElements = this.contents.filter(elm => elm.alias === alias);
     if (aliasElements.length) {
@@ -100,7 +113,7 @@ export class AppService {
     if (this.tabletWidth()) {
       this.scrollToId('showBox', 50);
     }
-    localStorage.setItem('currentCustomer', this.currentCustomer.name);
+    localStorage.setItem('currentCustomer', this.currentCustomer.name || null);
   }
 
   showLink(link: any) {
@@ -158,13 +171,15 @@ export class AppService {
     return objects.filter(obj => obj[key] && obj[key] === alias);
   }
 
-  contactForm(data: any) {
+  contactForm(data: any, captcher: string = '') {
+    data['captcher'] = captcher;
     return this.postJSON('php/sendMail.php', data);
   }
 
   secureURL(url: string) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
+
 
   private postJSON(source, data): Observable<any> {
     const headers = new Headers({'Content-Type': 'application/json'});

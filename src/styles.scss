@@ -13,6 +13,10 @@ html, * {
   backface-visibility: hidden;
 }
 
+.loading * {
+  transition-duration: 0s !important;
+}
+
 html, body, app-root {
   position: absolute;
   display: block;
@@ -56,12 +60,17 @@ h1, h2 {
   font-size: $font-size-title;
   line-height: $line-height-title;
   margin: 0 0 $gap-medium 0;
-  color: $color-brand-default;
+  color: $title-color;
 }
 
 h3, h4, h5 {
   font-size: $font-size-subtitle;
   line-height: $line-height-subtitle;
+  color: $title-color;
+}
+
+.list-title {
+  color: $title-color;
 }
 
 p {
@@ -74,10 +83,18 @@ b, .highlight, th {
 }
 
 .highlight, thead th, .nav-item {
-  color: $color-brand-default;
+  color: #fff !important;
 
-  * {
-    color: $color-brand-default;
+  span, a {
+    color: #fff !important;
+  }
+
+  &.active {
+    color: $highlight-color !important;
+
+    span, a {
+      color: $highlight-color !important;
+    }
   }
 }
 
@@ -420,6 +437,10 @@ img, video, iframe {
   z-index: 999;
 }
 
+re-captcha {
+  margin: 0 auto;
+}
+
 .page-navigation, .footer-navigation {
   .nav-item {
     @extend .button;
@@ -523,9 +544,14 @@ img, video, iframe {
   }
 }
 
+.ng-fa-icon {
+  max-height: $icon-size-large;
+}
+
 .social-media-buttons {
   position: relative;
   width: auto;
+  height: $icon-size;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -540,7 +566,8 @@ img, video, iframe {
     margin-right: $gap-small;
     height: 100%;
     width: auto;
-
+    max-height: 100%;
+    overflow: hidden;
   }
 
   .ng-fa-icon {
@@ -551,15 +578,41 @@ img, video, iframe {
     & > svg {
       height: 100%;
       width: auto;
+      max-width: 100%;
+      display: inline-block;
+
     }
   }
 
+}
+
+.grecaptcha-badge {
+  bottom: $footer-height + $gap-small !important;
+}
+
+.title-large {
+  font-size: $font-size-extra-large;
+}
+
+.title-small {
+  font-size: $font-size-large;
 }
 
 .contact-form, .imprint {
   .social-media-buttons {
     float: left;
     margin: 0;
+  }
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    @extend h2;
+    margin-right: $gap-small;
   }
 }
 
@@ -608,7 +661,7 @@ img, video, iframe {
     overflow: hidden;
     @extend .button;
     width: 50%;
-    min-height: 15rem;
+    min-height: 25%;
     z-index: 5;
     transform: scale(1, 1);
     @include transition(all, $animation-fast, ease);
@@ -630,9 +683,9 @@ img, video, iframe {
 
       }
 
-      h2 {
-        color: #fff;
-        //  color: $color-brand-default;
+      h1, h2 {
+        color: $highlight-color;
+        text-shadow: $text-shadow-default;
       }
 
     }
@@ -655,17 +708,16 @@ img, video, iframe {
       z-index: 10;
       cursor: default;
 
-      h2 {
+      h1, h2 {
         transform: scale(1.2, 1.2) translateY(-50%);
         text-shadow: $text-shadow-default;
         color: #fff;
-        //  color: $color-brand-default;
       }
     }
 
-    h2 {
+    h1, h2 {
       @extend .align-center;
-      color: $color-text;
+      color: $color-ui-background;
       position: relative;
       display: block;
       padding: 0 $gap-medium;
@@ -673,9 +725,31 @@ img, video, iframe {
       top: 50%;
       transform: scale(1.1, 1.1) translateY(-50%);
       text-shadow: 0 0 0 transparent;
-      @include transition(all, $animation-default, ease);
+      @include transition(all, $animation-fast, ease);
     }
   }
+}
+
+.experience-worth-container {
+  position: relative;
+  width: 100%;
+  height: $icon-size-small;
+  border: 1px solid $highlight-color-secondary;
+  background: $color-ui-background;
+
+  .experience-worth-fill {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background: $highlight-color;
+  }
+}
+
+app-social-media-buttons {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
 }
 
 .scrollable {
@@ -694,6 +768,12 @@ img, video, iframe {
     &:last-child {
       margin-bottom: $gap-large;
     }
+  }
+}
+
+.keywords {
+  h1, h2 {
+    margin: 0 $gap-medium 0 0;
   }
 }
 

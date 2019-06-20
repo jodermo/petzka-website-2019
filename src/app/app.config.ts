@@ -3,16 +3,23 @@ export const Config = {
     title: {de: 'Moritz Petzka', en: 'Moritz Petzka'},
     url: 'https://petzka.com',
     subtitle: {de: 'Web- & Multimedia-Produktion', en: 'Web & Multimedia Production'},
+    hashtags: 'petzka,multimedia,webdeveleopment,development',
+    keywords: [
+      {de: 'Webseiten', en: 'Websites'},
+      {de: 'Messestände', en: 'Fair Exhibits'},
+      {de: 'Präsentationen', en: 'Presentations'},
+      {de: 'und', en: 'and'},
+      {de: 'Apps', en: 'Apps'}
+    ],
     job: {de: 'Entwicklung, Konzeption und Gestaltung', en: 'Development conception and design'},
     location: {de: 'Köln / Bonn (Deutschland, NRW)', en: 'Cologne / Bonn (Germany, NRW)'},
     remote: {de: 'Weltweit via Home Office', en: 'worldwide via home office'},
     services: {de: 'Meine Dienstleistungen', en: 'My Services'},
     shareSubject: {de: 'Webseite - Moritz Petzka (https://petzka.com)', en: 'Website - Moritz Petzka (https://petzka.com)'},
-    shareMessage: {de: 'Schaue dir mal diese Webseite an', en: 'Take a look at this website'},
+    shareMessage: {de: 'Schaue mal diese Webseite an', en: 'Take a look at this website'},
     description: {
-      de: 'Willkommen, \nFreut mich, dass du auf meine Webseite gefunden hast! \n Mein Name ist Moritz Petzka, ich bin freiberuflicher Webentwickler, Medienschaffender und Künstler. \n\nAuf dieser Webseite findest du einen Überblick über mich und meine Arbeit. \n\n',
-      en: 'Welcome, \n' +
-        'Glad you found my website!\n' +
+      de: 'Freut mich, dass du auf meine Webseite gefunden hast! \n Mein Name ist Moritz Petzka, ich bin freiberuflicher Webentwickler, Medienschaffender und Künstler. \n\nAuf dieser Webseite findest du einen Überblick über mich und meine Arbeit. \n\n',
+      en: 'Glad you found my website!\n' +
         '  My name is Moritz Petzka, I\'m a freelance web developer, media creator and artist.\n' +
         '\n' +
         'On this website you will find a overview of me and my work.'
@@ -20,17 +27,25 @@ export const Config = {
     email: 'info@petzka.com',
     emailSubject: {de: 'Anfrage', en: 'Inquiry'},
   },
+  socialMediaAccounts: {
+    github: 'jodermo',
+    bitbucket: 'MoPet',
+    linkedin: 'moritz-petzka',
+    xing: 'Moritz_petzka',
+    docker: 'mopet'
+  },
   languages: [
     {alias: 'de', iso: 'DE', name: {de: 'Deutsch', en: 'German'}},
     {alias: 'en', iso: 'EN', name: {de: 'Englisch', en: 'English'}}
   ],
+  fallbackLanguage: 'en',
   navigation: [
     {title: {de: 'Moritz Petzka', en: 'Moritz Petzka'}, icon: null, link: ''},
-    {title: {de: 'Werkzeuge', en: 'My Tools'}, icon: null, link: 'tools'},
+    {title: {de: 'Werkzeuge', en: 'Tools'}, icon: null, link: 'tools'},
     {title: {de: 'Links', en: 'Links'}, icon: null, link: 'links'},
     {title: {de: 'Kunden', en: 'Customers'}, icon: null, link: 'customers'},
   ],
-  startPage: {
+  content: {
     title: {de: 'Moritz Petzka'},
     description: {de: 'Webentwicklung', en: 'Web Development'},
     contents: [
@@ -184,7 +199,7 @@ export const Config = {
             link: null,
             experienceWorth: 6,
             description: {
-              de: 'Beckend Entwicklung und Machinensteuerung',
+              de: 'Beckend Entwicklung und Maschinensteuerung',
               en: 'Backend development and machine control'
             }
           },
@@ -432,7 +447,316 @@ export const Config = {
                 experienceWorth: 9
               }
             ],
+          },
+          {
+            company: 'Docker, Inc.',
+            icon: 'assets/logos/docker-1.svg',
+            link: 'https://www.docker.com/',
+            products: [
+              {
+                name: 'Docker',
+                icon: 'assets/logos/docker.svg',
+                link: 'https://www.docker.com/',
+                experienceWorth: 9
+              }
+            ],
+          },
+          {
+            company: 'Adobe',
+            icon: 'assets/logos/adobe-2.svg',
+            link: 'https://www.adobe.com/',
+            products: [
+              {
+                name: 'Photoshop',
+                icon: 'assets/logos/photoshop-cc.svg',
+                link: 'https://helpx.adobe.com/photoshop/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'Illustrator',
+                icon: 'assets/logos/adobe-illustrator-cc.svg',
+                link: 'https://helpx.adobe.com/illustrator/faq.html',
+                experienceWorth: 9
+              }
+            ],
+          },
+        ],
+      },
+      {
+        alias: 'presentation',
+        title: {de: 'Interaktive \nPräsentationen', en: 'Interactive \nPresentations'},
+        image: 'assets/images/presentation.jpg',
+        text: {
+          de: 'Ein Web-Interface als interaktive Präsentation, bietet die perfekte Lösung, z.B. für Messestände, Bühnen-Präsentationen oder Werbetafeln. \nMit CSS3, HTML-Canvas-Elementen, SVGs und diversen JavaScript Bibliotheken, lassen sich dynamische Animationen erstellen und dank WebGL und Three.js ist auch die Darstellung von 3-Dimensinalen Inhalten ohne probleme möglich. \nEs besteht zudem die Möglichkeit, neben dem Interface, einen lokalen Webserver laufen zu lassen. So sind für diverse Interaktionen nahezu unbegenzte Möglichkeiten gegeben. \nVerschiedenste Hardware lässt sich so, verbunden mit Netzwerkkabel, USB oder als WLAN Gerät, auslesen und ansteuern. \nSo besteht die Möglichkeit Geräte wie z.B. VR-/AR-Headsets, Gamepads, Einplatinenrechner (z.B. Raspberry Pi) oder Controller und Sensoren anzuschliessen. \n \n Hier ein paar Beispiel-Anwendungen die ich in letzter Zeit umgesetzt habe:',
+          en: 'A web interface as an interactive presentation provides the perfect solution, e.g. for exhibition stands, stage presentations or billboards.\n' +
+            'With CSS3, HTML canvas elements, SVGs and various JavaScript libraries, dynamic animations can be created and thanks to WebGL and Three.js, the display of 3-dimensional contents is also possible without any problems.\n' +
+            'It is also possible to run a local web server next to the interface with the presentation. Thus, there are almost unlimited possibilities for various interactions.\n' +
+            'Various hardware can thus be read out and controlled together with a network cable, USB or WLAN device.\n' +
+            'So there is the possibility devices such. VR / AR headsets, gamepads, single-board computers (such as Raspberry Pi) or controllers and sensors.\n' +
+            ' \n' +
+            '  Here are a few example applications that I have recently implemented:',
+        },
+        toolText: {
+          de: 'Überblick über verwendete Techniken und Tools::\n\n',
+          en: 'Overview of used techniques and tools:\n\n'
+        },
+        list: [
+          {
+            title: {de: 'Interaktive Werbetafeln', en: 'Interaktive Billboards'},
+            description: {
+              de: 'Animierte und interaktive Werbetaflen, in diesem Fall auf einer großen Auto-Messe in Hannover. \nPassanten konnten auf Werbetafeln in Form von Touch-Displays auf die Inhalte einwirken. \nEin eingebauter Ruhemodus führte ohne Eingabe, nach einer Zeit auf den Startpunkt zurück. \nBei einem Interface bestand die Herausforderung darin, einen Übergroßen 4K Monitor, mit Radar-Touch (einer externe Radar-Sensorik für Touch und Gestensteurung) anzusteuern. Die Schnittstelle haben wir am Ende über "TUIO" und Websockets realisiert.',
+              en: 'Animated and interactive advertising boards, in this case at a big car fair in Hanover.\n' +
+                'Passers-by could influence the contents on billboards in the form of touch displays.\n' +
+                'A built-in sleep mode returned to the starting point after a time without input.\n' +
+                'In one interface, the challenge was to control an oversized 4K monitor with radar touch (an external radar sensor for touch and gesture control). At the end we realized the interface via "TUIO" and Websockets.'
+            },
+          },
+          {
+            title: {de: 'Audio/Video-Interfaces', en: 'Audio/Video Interfaces'},
+            description: {
+              de: 'Verschiedene Video-Player-Interfaces, je nach Benutzer-Interaktion, verändern sich die Ihnalte. \nz.B können Bilder, Animationen oder Texte eingeblendet werden, Ein anderer Video-Clip kann angesteuert werden oder das Video-Abpielverhalten kann verändert werden (z.B. Zeitsprünge, schnelleres oder langsameres Abspielen).',
+              en: 'Different video player interfaces, depending on user interaction, change the old one.\n' +
+                'For example, images, animations or texts can be displayed, another video clip can be controlled or the video playback behavior can be changed (for example, time jumps, faster or slower playback).'
+            },
+          },
+          {
+            title: {de: 'Touchscreen Tisch Mit Object-Steuerung', en: 'Touchscreen Table With Object Controlling'},
+            description: {
+              de: 'Ein Interaktiver Tisch mit großem 4K-Touchscreen-Monitor als Tischplatte und verbauter Sensorik für Objekt-Erkennung. \nEin Projekt für ür eine große Auto-Messe in Hannover. \nJe nach gelegtem Objekt (hier in Form von Klötzchen) und dessen Position, werden verschiedene Szenarien auf dem Tisch dargestellt. \nFür den reinen Besucher-Modus gab es eine Fallback-Version die sich mit Touchgesten steuern ließ und ohne Klötzchen auskommt. \nDie Konzepte und der Tisch wurden gestellt, das Inteface, die Animation und die Interaktion habe ich entwickelt.',
+              en: 'An interactive table with large 4K touch screen monitor as tabletop and built-in sensor for object detection.\n' +
+                'A project for a big car fair in Hanover.\n' +
+                'Depending on the object placed (here in the form of blocks) and its position, different scenarios are displayed on the table.\n' +
+                'For the pure visitor mode, there was a fallback version that could be controlled with touch gestures and gets along without pegs.\n' +
+                'The concepts and the table have been set, the interface, the animation and the interaction I have developed.'
+            },
+          },
+          {
+            title: {
+              de: 'Interaktive Präsentation (als Alternative zu Powerpoint)',
+              en: 'Interactive presentation (as an alternative to PowerPoint)'
+            },
+            description: {
+              de: 'Für eine Image-Kampagne einer Großen Firma, habe ich eine interaktive und animierte Präsentation erstellt. \nAusgabe-Gerät war einem großer 4K Touch-Bildschirm. \nDas Interface wurde mit Angular gebaut und die Animationen mit TypeScript und animierten SVGs umgesetzt.',
+              en: 'For an image campaign of a big company, I created an interactive and animated presentation.\n' +
+                'Output device was a large 4K touch screen.\n' +
+                'The interface was built with Angular and implemented the animations with TypeScript and animated SVGs.'
+            },
+          },
+        ],
+        programmingLanguages: [
+          {
+            alias: 'js',
+            name: 'TypeScript',
+            icon: 'assets/logos/javascript.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Interface und Lokaler Server',
+              en: 'Interface and local server'
+            }
+          },
+          {
+            alias: 'html',
+            name: 'HTML',
+            icon: 'assets/logos/html5.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Markup Spache für Webseiten-Struktur',
+              en: 'Markup language for website structures'
+            }
+          },
+          {
+            alias: 'css',
+            name: 'CSS',
+            icon: 'assets/logos/css-3.svg',
+            link: null,
+            experienceWorth: 10,
+            description: {
+              de: 'Layout Gestaltung',
+              en: 'Layout Design'
+            }
+          },
+          {
+            alias: 'python',
+            name: 'Python',
+            icon: 'assets/logos/python-5.svg',
+            link: null,
+            experienceWorth: 6,
+            description: {
+              de: 'Sensor- und Maschinensteuerung',
+              en: 'Sensor and machine control'
+            }
+          },
+          {
+            alias: 'database',
+            name: 'Datenbanken',
+            icon: 'assets/logos/cloud.svg',
+            link: null,
+            experienceWorth: 8,
+            description: {
+              de: 'APIs und Datenbank-Verwaltung',
+              en: 'APIs and Database Management'
+            }
+          },
+        ],
+        frameworks: [
+          {
+            alias: 'node',
+            language: 'js',
+            name: 'Node.js',
+            icon: 'assets/logos/nodejs-icon.svg',
+            link: 'https://nodejs.org/en/about/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'angular',
+            language: 'js',
+            name: 'Angular',
+            icon: 'assets/logos/angular-icon.svg',
+            link: 'https://angular.io/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'nestjs',
+            language: 'js',
+            name: 'Nest.js',
+            icon: 'assets/logos/nest_logo.svg',
+            link: 'https://nestjs.com/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'three',
+            language: 'js',
+            name: 'Three.js',
+            icon: 'assets/logos/javascript-4.svg',
+            link: 'https://threejs.org/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'd3',
+            language: 'js',
+            name: 'D3.js',
+            icon: 'assets/logos/d3-2.svg',
+            link: 'https://d3js.org/',
+            experienceWorth: 10,
+            description: {
+              de: 'D3.js ist eine JavaScript-Bibliothek zum Bearbeiten von Dokumenten basierend auf Daten',
+              en: 'D3.js is a JavaScript library for manipulating documents based on data'
+            }
+          },
+          {
+            alias: 'sass',
+            language: 'css',
+            name: 'SASS',
+            icon: 'assets/logos/node-sass.svg',
+            link: 'https://sass-lang.com/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
+          },
+          {
+            alias: 'sqlite',
+            language: 'database',
+            name: 'SQLite',
+            icon: 'assets/logos/sqlite.svg',
+            link: 'https://www.sqlite.org/',
+            experienceWorth: 10,
+            description: {
+              de: '',
+              en: ''
+            }
           }
+        ],
+        software: [
+          {
+            company: 'JetBrains',
+            icon: 'assets/logos/jetbrains-1.svg',
+            link: 'https://www.jetbrains.com/',
+            products: [
+              {
+                name: 'WebStorm',
+                icon: 'assets/logos/webstorm-icon.svg',
+                link: 'https://www.jetbrains.com/webstorm/',
+                experienceWorth: 10
+              },
+            ],
+          },
+          {
+            company: 'Docker, Inc.',
+            icon: 'assets/logos/docker-1.svg',
+            link: 'https://www.docker.com/',
+            products: [
+              {
+                name: 'Docker',
+                icon: 'assets/logos/docker.svg',
+                link: 'https://www.docker.com/',
+                experienceWorth: 9
+              }
+            ],
+          },
+          {
+            company: 'Adobe',
+            icon: 'assets/logos/adobe-2.svg',
+            link: 'https://www.adobe.com/',
+            products: [
+              {
+                name: 'Photoshop',
+                icon: 'assets/logos/photoshop-cc.svg',
+                link: 'https://helpx.adobe.com/photoshop/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'Illustrator',
+                icon: 'assets/logos/adobe-illustrator-cc.svg',
+                link: 'https://helpx.adobe.com/illustrator/faq.html',
+                experienceWorth: 9
+              },
+              {
+                name: 'Premiere',
+                icon: 'assets/logos/premiere-cc.svg',
+                link: 'https://helpx.adobe.com/premiere/faq.html',
+                experienceWorth: 10
+              },
+              {
+                name: 'After-Effects',
+                icon: 'assets/logos/after-effects-cc.svg',
+                link: 'https://helpx.adobe.com/after-effects/faq.html',
+                experienceWorth: 9
+              },
+            ],
+          },
+          {
+            company: 'Autodesk',
+            icon: 'assets/logos/autodesk-4.svg',
+            link: 'https://www.autodesk.de/',
+            products: [
+              {
+                name: 'Maya',
+                icon: 'assets/logos/maya-2017.svg',
+                link: 'https://www.autodesk.de/products/maya/overview',
+                experienceWorth: 8
+              }
+            ],
+          },
         ],
       },
       {
@@ -440,7 +764,7 @@ export const Config = {
         title: {de: 'Grafik & Animation', en: 'Graphic & Animation'},
         image: 'assets/images/gfx.jpg',
         text: {
-          de: 'Durch meine Leidenschaft für Medien in Bild und Ton und meiner gestalterischen Begabungg, habe ich mich 2007 dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler verschafft. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich beherrsche:',
+          de: 'Wegen meiner künstlerichen Begabung und Leidenschaft für Medien und deren Gestaltung, habe ich mich nach meiner Schullaufbahn dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir damals einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler, bei der Firma ImagineOn in Köln, verschafft und seit 2012 bin ich erfolgreich Selbstständig. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich beherrsche:',
           en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
             'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
             'To this day, designing and editing visual media is a great passion of mine. In connection with another suffering, the programming, I have been able to expand my know-how over the last years, especially in the field of animation and 3D design.\n' +
@@ -476,39 +800,38 @@ export const Config = {
           {
             title: {de: '3D Design \nmit Autodesk Maya', en: '3D Design with Autodesk Maya'},
             description: {
-              de: 'Modeling, Animation & Rendering',
-              en: 'Modeling, Animation & Rendering'
+              de: 'Modeling, Animation und Rendering',
+              en: 'Modeling, Animation and Rendering'
             },
           },
           {
             title: {de: 'HTML/CSS (2D & 3D)', en: 'HTML/CSS (2D & 3D)'},
             description: {
               de: 'Web-Basierte Layouts und Animationen mit CSS3, SASS oder LESS',
-              en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr'
+              en: 'Web-based layouts and animations with CSS3, SASS or LESS'
             },
           },
           {
             title: {de: 'HTML Canvas (2D)', en: 'HTML Canvas Animations'},
             description: {
               de: 'Web-Basierte 2D Animationen mit HTML und JavaScript',
-              en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr'
+              en: 'Web-based 2D animations with HTML and JavaScript'
             },
           },
           {
             title: {de: 'WebGL 3D', en: 'WebGL 3D Animations'},
             description: {
               de: 'Web-Basierte Layouts und Animationen in 3D, lauffähig in allen gängigen Browsern.',
-              en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr'
+              en: 'Web-based layouts and animations in 3D, executable in all major browsers.'
             },
           },
           {
-            title: {de: 'WebGL VR & AR', en: 'WebGL 3D Animations'},
+            title: {de: 'WebGL VR & AR', en: 'WebGL VR & AR'},
             description: {
               de: 'Vituelle Realität im Browser, mit WebGL und Three.js',
-              en: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr'
+              en: 'Virtual reality in the browser, with WebGL and Three.js'
             },
           },
-
         ],
         programmingLanguages: [
           {
@@ -656,7 +979,7 @@ export const Config = {
           {
             company: 'Blender',
             icon: 'assets/logos/blender.svg',
-            link: 'hhttps://www.blender.org/',
+            link: 'https://www.blender.org/',
             products: [
               {
                 name: 'Blender',
@@ -692,7 +1015,7 @@ export const Config = {
         title: {de: 'Video-Bearbeitung', en: 'Video Editing'},
         image: 'assets/images/vfx.jpg',
         text: {
-          de: 'Durch meine Leidenschaft für Medien in Bild und Ton und meiner gestalterischen Begabungg, habe ich mich 2007 dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler verschafft. \nNeben meiner Tätigkeit als Grafiker und Entwickler, habe ich mich schon immer gerne mit der Produktion von Videos beschäftigt. \n\nHier eine Liste von Dingen die ich beherrsche:',
+          de: 'In meiner Ausbildung als Mediengestalter, habe ich die Grundlagen für Video-Produktion und Nachbearbeitung gelernt. \nBis heute ist die aufbereitung von Video-Material ein großer bestandteil meiner Arbeit. \nDie Verbindung aus Grafik-Bearbeitung, Animation und Video-Bearbeitung hat dazu geführ, das ich mich mit der Erstellung von VFX und Motion-Designs auseinander gesetzt habe. \n\nEine Überblick über Dienstleistungen die ich anbiete:',
           en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
             'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
             'In addition to my work as a graphic designer and developer, the production of videos is a great passion of mine.\n' +
@@ -846,77 +1169,11 @@ export const Config = {
                 experienceWorth: 7
               }
             ],
-          }
-        ]
-      },
-      {
-        alias: 'art',
-        title: {de: 'Kunst & Musik', en: 'Art & Music'},
-        image: 'assets/images/art.jpg',
-        text: {
-          de: 'Als Sohn einer Künstlerin und eines Kundhandwerkers, wurde mir das krative arbeiten schon mit in die Wiege gelegt. \n In meiner Kindheit bin ich zu Waldorfschule gegangen, dort wurde kreatives schaffen und Kunst zusätzlich sehr gefördert.\n Bis heute sind künstlerische Tätigkeiten ein Hauptbestandteil in meinem Leben und es gibt eigentlich nichts das ich lieber tue. \nIch bin immer auf der suche nach neuen Methoden mich kreativ zu betätigen, da ist es egal ob es sich um Musik, Vieos, Malen, Zeichen oder Handwerkliche dinge dreht. \n\nHier eine liste mit künstlerischen aktivitäten denen ich über die Jahre nachgegangen bin:',
-          en: 'As the son of an artist and a art craftsman, I was involved in the creative work, since my birth.\n' +
-            'In my childhood, I went to Waldorf School, where creative work and art was very promoted, too.\n' +
-            'Till now, artistic activities are a major part of my life and there\'s as good as nothing I\'d rather do.\n' +
-            'I\'m always on the lookout for new ways to be creative, it does not matter if it\'s about music, movies, painting, drawing or craftsmanship.\n' +
-            '\n' +
-            'Here is a list of artistic activities I have followed in the past:',
-        },
-        toolText: {
-          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
-          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
-        },
-        list: [
-          {
-            title: {de: 'Musikproduktion (digital)', en: 'Musik Producttion (digital)'},
-            description: {
-              de: 'Digitale Musikproduktion (verschiedene electro-genres)',
-              en: 'Digital music production (various electro-genres)'
-            },
           },
-          {
-            title: {de: 'Analoge Synthesizer Musik', en: 'Analoge Synthesizer Musik'},
-            description: {
-              de: 'Elektronische Musik auf analogen Synthesizern',
-              en: 'Electronic music on analog synthesizers'
-            },
-          },
-          {
-            title: {de: 'Storyboard & Scribbles', en: 'Storyboard & Scribbles'},
-            description: {
-              de: 'Drehbücher und Konzepte in Bildern',
-              en: 'Scripts and concepts in pictures'
-            },
-          },
-          {
-            title: {de: 'Klassisches Malen Und Zeichnen', en: 'Classical Painting And Drawing'},
-            description: {
-              de: 'Portraits, Stillleben, Landschaftsbilder, etc.',
-              en: 'Portraits, still lifes, landscapes, etc.'
-            },
-          },
-          {
-            title: {de: 'Airbrush', en: 'Airbrush'},
-            description: {
-              de: 'Malen mit Druckluft, Spritzpistole und Schablonen',
-              en: 'Painting with compressed air, spray gun and stencils'
-            },
-          },
-          {
-            title: {de: 'Tattoo', en: 'Tattoo'},
-            description: {
-              de: 'Malen mit Druckluft, Spritzpistole und Schablonen',
-              en: 'Painting with compressed air, spray gun and stencils'
-            },
-          },
-        ],
-        programmingLanguages: [],
-        frameworks: [],
-        software: [
           {
             company: 'Steinberg',
             icon: 'assets/logos/steinberg-sx.svg',
-            link: 'https://www.toonboom.com/',
+            link: 'https://new.steinberg.net/',
             products: [
               {
                 name: 'Cubase',
@@ -951,90 +1208,8 @@ export const Config = {
               }
             ],
           },
-          {
-            company: 'Toon Boom Animation Inc.',
-            icon: 'assets/logos/toonboom_logo.svg',
-            link: 'https://www.toonboom.com/',
-            products: [
-              {
-                name: 'Animate Pro',
-                icon: 'assets/logos/toonboom_logo.svg',
-                link: 'https://www.toonboom.com/news/toon-boom-animate-3-and-animate-pro-3-now-available',
-                experienceWorth: 8
-              },
-              {
-                name: 'Harmony',
-                icon: 'assets/logos/harmony17.svg',
-                link: 'https://www.toonboom.com/products/harmony',
-                experienceWorth: 7
-              }
-            ],
-          },
-          {
-            company: 'Adobe',
-            icon: 'assets/logos/adobe-2.svg',
-            link: 'https://www.adobe.com/',
-            products: [
-              {
-                name: 'Photoshop',
-                icon: 'assets/logos/photoshop-cc.svg',
-                link: 'https://helpx.adobe.com/photoshop/faq.html',
-                experienceWorth: 10
-              },
-              {
-                name: 'Illustrator',
-                icon: 'assets/logos/adobe-illustrator-cc.svg',
-                link: 'https://helpx.adobe.com/illustrator/faq.html',
-                experienceWorth: 9
-              },
-              {
-                name: 'After-Effects',
-                icon: 'assets/logos/after-effects-cc.svg',
-                link: 'https://helpx.adobe.com/after-effects/faq.html',
-                experienceWorth: 9
-              }
-            ],
-          },
-          {
-            company: 'Autodesk',
-            icon: 'assets/logos/autodesk-4.svg',
-            link: 'https://www.autodesk.de/',
-            products: [
-              {
-                name: 'Maya',
-                icon: 'assets/logos/maya-2017.svg',
-                link: 'https://www.autodesk.de/products/maya/overview',
-                experienceWorth: 8
-              },
-              {
-                name: 'Mudbox',
-                icon: 'assets/logos/mudbox-1.svg',
-                link: 'https://www.autodesk.com/products/mudbox/overview',
-                experienceWorth: 8
-              },
-              {
-                name: '3ds Max',
-                icon: 'assets/logos/3ds-max-full.svg',
-                link: 'https://www.autodesk.de/products/3ds-max/overview',
-                experienceWorth: 6
-              }
-            ],
-          },
-          {
-            company: 'Blender',
-            icon: 'assets/logos/blender.svg',
-            link: 'hhttps://www.blender.org/',
-            products: [
-              {
-                name: 'Blender',
-                icon: 'assets/logos/blender-1.svg',
-                link: 'https://www.blender.org/about/',
-                experienceWorth: 7
-              },
-            ],
-          },
         ]
-      }
+      },
     ]
   },
   footer: {
@@ -1042,353 +1217,6 @@ export const Config = {
       {title: {de: 'Kontakt', en: 'Contact'}, icon: null, link: 'contact'},
       {title: {de: 'Impressum', en: 'Imprint'}, icon: null, link: 'imprint'},
     ],
-  },
-  sources: {},
-  skills: {
-    art: [],
-    programmingLanguages: [
-      {
-        alias: 'js',
-        name: 'JavaScript/TypeScript',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Frontend & Beckend Entwicklung',
-          en: 'Frontend & backend development'
-        }
-      },
-      {
-        alias: 'html',
-        name: 'HTML',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Markup Spache für Webseiten-Struktur',
-          en: 'Markup language for website structures'
-        }
-      },
-      {
-        alias: 'css',
-        name: 'CSS',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Layout Gestaltung',
-          en: 'Layout Design'
-        }
-      },
-      {
-        alias: 'php',
-        name: 'PHP',
-        icon: null,
-        link: null,
-        experienceWorth: 8,
-        description: {
-          de: 'Beckend Entwicklung',
-          en: 'Backend development'
-        }
-      },
-      {
-        alias: 'database',
-        name: 'Datenbanken',
-        icon: null,
-        link: null,
-        experienceWorth: 8,
-        description: {
-          de: 'APIs und Datenbank-Verwaltung',
-          en: 'APIs and Database Management'
-        }
-      },
-      {
-        alias: 'python',
-        name: 'Python',
-        icon: null,
-        link: null,
-        experienceWorth: 6,
-        description: {
-          de: 'Beckend Entwicklung und Machinensteuerung',
-          en: 'Backend development and machine control'
-        }
-      },
-    ],
-    software: [
-      {
-        alias: 'photoshop',
-        name: 'Adobe Photoshop',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Bildbearbeitung',
-          en: 'Image Editing'
-        }
-      },
-      {
-        alias: 'illustrator',
-        name: 'Adobe Illustrator',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Vector Grafiken',
-          en: 'Vector Graphics'
-        }
-      },
-      {
-        alias: 'aftereffects',
-        name: 'Adobe After-Effects',
-        icon: null,
-        link: null,
-        experienceWorth: 8,
-        description: {
-          de: 'Video Postproduktion',
-          en: 'Video post production'
-        }
-      },
-      {
-        alias: 'premiere',
-        name: 'Adobe Premiere',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: 'Video Schnitt',
-          en: 'Video cut'
-        }
-      },
-      {
-        alias: 'indisign',
-        name: 'Adobe InDesign',
-        icon: null,
-        link: null,
-        experienceWorth: 6,
-        description: {
-          de: 'Print Gestaltung',
-          en: 'Print Design'
-        }
-      },
-      {
-        alias: 'cubase',
-        name: 'Steinberg Cubase',
-        icon: null,
-        link: null,
-        experienceWorth: 9,
-        description: {
-          de: 'Musik-Produktion und Audio-Bearbeitung',
-          en: 'Music production and audio editing'
-        }
-      }
-    ],
-    frameworks: [
-      {
-        alias: 'node',
-        language: 'js',
-        name: 'Node.js',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'angular',
-        language: 'js',
-        name: 'Angular',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'angularjs',
-        language: 'js',
-        name: 'AngularJS',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'nestjs',
-        language: 'js',
-        name: 'Nest.js',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'react',
-        language: 'js',
-        name: 'React',
-        icon: null,
-        link: null,
-        experienceWorth: 6,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'vue',
-        language: 'js',
-        name: 'Vue.js',
-        icon: null,
-        link: null,
-        experienceWorth: 6,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'three',
-        language: 'js',
-        name: 'Three.js',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'd3',
-        language: 'js',
-        name: 'D3.js',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'jQuery',
-        language: 'js',
-        name: 'jQuery',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'sass',
-        language: 'css',
-        name: 'SASS',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'less',
-        language: 'css',
-        name: 'LESS',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'symfony',
-        language: 'php',
-        name: 'Symfony',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'zend',
-        language: 'php',
-        name: 'Zend',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'sqlite',
-        language: 'database',
-        name: 'SQLite',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'mongodb',
-        language: 'database',
-        name: 'MongoDB',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'phpmyadmin',
-        language: 'database',
-        name: 'phpMyAdmin',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-      {
-        alias: 'jsonserver',
-        language: 'database',
-        name: 'JSON-Server',
-        icon: null,
-        link: null,
-        experienceWorth: 10,
-        description: {
-          de: '',
-          en: ''
-        }
-      },
-    ],
-    usement: []
   },
   links: [
     {
@@ -1426,6 +1254,7 @@ export const Config = {
       image: 'assets/images/dasauge.jpg',
       url: 'https://dasauge.de/-moritz-petzka/',
     },
+    /*
     {
       alias: 'soundcloud',
       name: 'SoundCloud',
@@ -1457,6 +1286,7 @@ export const Config = {
         }
       ],
     },
+      */
   ],
   customers: [
     {
@@ -1484,56 +1314,155 @@ export const Config = {
       description: {de: 'Parfümerie Douglas GmbH', en: ''},
       website: 'https://www.douglas.de/',
       image: 'assets/images/douglas_bg.jpg',
-      logo: 'assets/images/douglas_logo.svg'
+      logo: 'assets/images/douglas_logo.svg',
+      tasks: [
+        {de: 'Mitglied im Web-Development Team', en: 'Member of the web development team'},
+        {de: 'Instandhaltung und Pflege des Online-Auftritts', en: 'Maintenance and care of the online presence'},
+        {de: 'Erstellung von internationalen Online-Kampagnen', en: 'Creation of international online campaigns'}
+      ],
+      technologies: [
+        {de: 'Hybris', en: 'Hybris'},
+        {de: 'React', en: 'React'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'Cormanum',
       description: {de: 'DIE WELT UM HANDWERK, KUNST UND DESIGN', en: ''},
       website: 'https://www.cormanum.com/',
       image: 'assets/images/cormanum_bg.jpg',
-      logo: 'assets/images/cormanum.svg'
+      logo: 'assets/images/cormanum.svg',
+      tasks: [
+        {de: 'Entwicklung des Online-Shops', en: 'Development of the online shop'},
+        {de: 'Betreuung des Online-Shops', en: 'Care of the online shop'},
+      ],
+      technologies: [
+        {de: 'Shopware', en: 'Shopware'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'BadaLuma',
       description: {de: 'digital solutions focused on healthcare', en: 'digital solutions focused on healthcare'},
       website: 'https://badaluma.com/',
       image: 'assets/images/badaluma_bg.jpg',
-      logo: 'assets/images/badaluma.png'
+      logo: 'assets/images/badaluma.png',
+      tasks: [
+        {de: 'Technische Beratung', en: 'Technical advices'},
+        {de: 'Technische Konzeption von Apps', en: 'Technical conception of apps'},
+        {de: 'Entwicklung modularer Komponenten für Apps', en: 'Development of the online shop'},
+      ],
+      technologies: [
+        {de: 'Node.js', en: 'Node.js'},
+        {de: 'Angular', en: 'Angular'},
+        {de: 'TypeScript', en: 'TypeScript'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'D3.js', en: 'D3.js'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'pabana',
       description: {de: 'interactive interfaces - healthcare', en: 'interactive interfaces - healthcare'},
       website: 'http://pabana.com/',
       image: 'assets/images/pabana_bg.jpg',
-      logo: 'assets/images/pabana_bg.jpg'
+      logo: 'assets/images/pabana_bg.jpg',
+      tasks: [
+        {de: 'Technische Beratung', en: 'Technical advices'},
+        {de: 'Technische Konzeption von Apps', en: 'Technical conception of apps'},
+        {de: 'Entwicklung modularer Komponenten für Apps', en: 'Development of the online shop'},
+      ],
+      technologies: [
+        {de: 'Node.js', en: 'Node.js'},
+        {de: 'Angular', en: 'Angular'},
+        {de: 'TypeScript', en: 'TypeScript'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'D3.js', en: 'D3.js'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'TAKEPART',
       description: {de: 'media and science', en: 'media and science'},
       website: 'http://takepart-media.de',
       image: 'assets/images/takepart_bg.jpg',
-      logo: 'assets/images/takepart.png'
+      logo: 'assets/images/takepart.png',
+      tasks: [
+        {
+          de: 'Umsetzung von Webseiten zu Kampagnen im Healthcare-Sektor',
+          en: 'Implementation of websites for campaigns in the healthcare sector'
+        },
+      ],
+      technologies: [
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'art tempi',
       description: {de: 'Agentur für Gesundheitskommunikation', en: 'Agentur für Gesundheitskommunikation'},
       website: 'http://www.art-tempi.de/',
       image: 'assets/images/art_tempi_bg.jpg',
-      logo: 'assets/images/arttempi.png'
+      logo: 'assets/images/arttempi.png',
+      tasks: [
+        {
+          de: 'Umsetzung von Webseiten zu Kampagnen im Healthcare-Sektor',
+          en: 'Implementation of websites for campaigns in the healthcare sector'
+        },
+      ],
+      technologies: [
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'CD Werbeagentur',
       description: {de: 'Full Service Agentur', en: 'Full Service Agentur'},
       website: 'http://www.cdonline.de/',
       image: 'assets/images/cd_werbeagentur_bg.jpg',
-      logo: 'assets/images/CD-Werbeagentur.png'
+      logo: 'assets/images/CD-Werbeagentur.png',
+      tasks: [
+        {de: 'Erstellung von Animationen', en: 'Creation of animations'},
+        {de: 'Video Schnitt', en: 'Video editing'},
+        {de: 'Video Nachbearbeitung', en: 'Video post production'},
+      ],
+      technologies: [
+        {de: 'Adobe Premiere', en: 'Adobe Premiere'},
+        {de: 'Adobe After-Effects', en: 'Adobe After-Effects'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'iElements',
       description: {de: 'Internetagentur aus Köln', en: 'Internetagentur aus Köln'},
       website: 'http://www.i-elements.de/',
       image: 'assets/images/iElements_bg.jpg',
-      logo: 'assets/images/ie-logo.png'
+      logo: 'assets/images/ie-logo.png',
+      tasks: [
+        {de: 'Erstellung von Facebook-Apps', en: 'Creation of Facebook apps'},
+        {de: 'Erstellung von Websites', en: 'Creation of websites'},
+        {de: 'Betreuung von Online-Kampagnen', en: 'Supervision of online campaigns'},
+      ],
+      technologies: [
+        {de: 'AngularJS', en: 'AngularJS'},
+        {de: 'Wordpress', en: 'Wordpress'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     /*
 {
@@ -1549,35 +1478,89 @@ export const Config = {
       description: {de: 'Parties, Konzerte und Veranstaltungen', en: 'Parties, Concerts and Events'},
       website: 'http://underground-events.de/',
       image: 'assets/images/underground_events_bg.jpg',
-      logo: 'assets/images/underground-events_black.png'
+      logo: 'assets/images/underground-events_black.png',
+      tasks: [
+        {de: 'Erstellung von Webseiten', en: 'Creation of websites'},
+        {de: 'Erstellung von Facebook-Apps', en: 'Creation of Facebook apps'},
+        {de: 'Betreuung von Online-Kampagnen', en: 'Supervision of online campaigns'},
+      ],
+      technologies: [
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'Angular', en: 'Angular'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'Crew4You',
       description: {de: 'TV, Grafik & Web', en: 'TV, Graphic & Web'},
       website: 'http://www.crew4you.info/',
       image: 'assets/images/crew_4_you_bg.jpg',
-      logo: 'assets/images/c4u.png'
+      logo: 'assets/images/c4u.png',
+      tasks: [
+        {de: 'Betreuung von Webseiten', en: 'Supervision of websites'},
+        {de: 'Ausbau einer API', en: 'Expansion of an API'},
+      ],
+      technologies: [
+        {de: 'PHP', en: 'PHP'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'Blue Byte / UBISOFT',
       description: {de: 'Ubisoft studio', en: 'Ubisoft studio'},
       website: 'http://www.bluebyte.com',
       image: 'assets/images/bluebyte_ubisoft_bg.jpg',
-      logo: 'assets/images/bluebyte_logo-small.png'
+      logo: 'assets/images/bluebyte_logo-small.png',
+      tasks: [
+        {de: 'Erstellung von Online-Werbung', en: 'Creation of online advertising'},
+      ],
+      technologies: [
+        {de: 'Adobe Flash', en: 'Adobe Flash'},
+        {de: 'Powerflasher FDT', en: 'Powerflasher FDT'},
+      ]
     },
     {
       name: 'Webagentur Köln',
       description: {de: 'Webdesign Agentur aus Köln', en: 'Webdesign Agentur aus Köln'},
       website: 'http://www.webagentur-koeln.de/',
       image: 'assets/images/webagentur_koeln_bg.jpg',
-      logo: 'assets/images/wk_logo.png'
+      logo: 'assets/images/wk_logo.png',
+      tasks: [
+        {de: 'Erstellung von Webseiten', en: 'Creation of websites'},
+        {de: 'Erstellung von Online-Shops', en: 'Creation of online shops'},
+        {de: 'Betreuung von Projekten', en: 'Supervision of projects'},
+      ],
+      technologies: [
+        {de: 'Shopware', en: 'Shopware'},
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'Angular', en: 'Angular'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     {
       name: 'Temtra insulations',
       description: {de: 'Isolationen und Thermische Trennung', en: 'Isolationen und Thermische Trennung'},
       website: 'http://temtra.de/',
       image: 'assets/images/temtra_bg.jpg',
-      logo: 'assets/images/temtra_logo_negativ_neu.jpg'
+      logo: 'assets/images/temtra_logo_negativ_neu.jpg',
+      tasks: [
+        {de: 'Erstellung des Online-Auftritts', en: 'Creation of the online presence'},
+      ],
+      technologies: [
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     /*
     {
@@ -1593,7 +1576,18 @@ export const Config = {
       description: {de: 'Essen, Trinken und Tanzen', en: 'Essen, Trinken und Tanzen'},
       website: 'http://afmwe.de/',
       image: 'assets/images/afmwe_bg.jpg',
-      logo: 'assets/images/afmwe-logo.svg'
+      logo: 'assets/images/afmwe-logo.svg',
+      tasks: [
+        {
+          de: 'Erstellung eines Flash-Fallback \bin Form einer JavaScript-/HTML5-Seite',
+          en: 'Create a Flash fallback in the form of a JavaScript / HTML5 page'
+        },
+      ],
+      technologies: [
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
     },
     /*
     {
@@ -1613,8 +1607,8 @@ export const Config = {
     },
     {
       alias: 'experience_worth',
-      de: 'Erfahrungswert \n(0 - 10)',
-      en: 'Experience Worth \n(0 - 10)'
+      de: 'Erfahrungswert',
+      en: 'Experience Worth'
     },
     {
       alias: 'software',
@@ -1650,6 +1644,28 @@ export const Config = {
       alias: 'used_technologies',
       de: 'Benutzte Technologien',
       en: 'Used technologies'
+    },
+    {
+      alias: 'form_sumitted_text',
+      de: 'Vielen Dank! \nDie Nachricht wurde erfolgreich an mich gesendet. \n\nIch werde mich so schnell wie Möglich melden.',
+      en: 'Used technologies'
+    },
+    {
+      alias: 'form_sumitted_not_valid',
+      de: 'Bitte alle benötigten Felder ausfüllen',
+      en: 'fill in all required fields, please'
+    },
+    {
+      alias: 'form_sumitted_error',
+      de: 'Ups! \nDa ist etwas schief gelaufen. \nVersuche es zu einem späteren Zeitpunkt noch einmal.',
+      en: 'Oops!\n' +
+        'Something went wrong.\n' +
+        'Try again later.'
+    },
+    {
+      alias: 'go_to_start',
+      de: 'Hier gehts zur Startseite',
+      en: 'Here you go to the start page'
     },
     {
       alias: 'share',

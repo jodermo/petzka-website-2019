@@ -1,4 +1,5 @@
 @import "globals";
+@import "responsive-table";
 
 @media (min-width: $ultra-hd_width) {
   body, html {
@@ -13,6 +14,9 @@
 }
 
 @media (max-width: $tablet_width) {
+  .mobile-hide {
+    display: none !important;
+  }
   body, html {
     font-size: $font_size_tablet;
   }
@@ -71,10 +75,36 @@
       width: 100%;
     }
 
+    .show-box-content.content-right-reverse.active {
+      left: 0;
+    }
+
     .center-item {
       position: relative;
       top: 0;
       transform: translateY(0);
+    }
+
+    [title]:before {
+      font-size: $font-size-large;
+    }
+
+    table {
+      @include mobile-table();
+
+      thead, tbody {
+        tr, [title]:before {
+          border-bottom: 1px solid $color-transparent-dark;
+        }
+
+        td, th {
+          border: none !important;
+        }
+      }
+
+      tbody {
+        margin-bottom: $gap-large;
+      }
     }
 
   }
@@ -84,10 +114,6 @@
 
     .social-media-buttons {
       flex-wrap: wrap;
-
-      a {
-        max-height: 50%;
-      }
     }
   }
 
@@ -108,6 +134,7 @@
       -webkit-columns: 1;
       -moz-columns: 1;
     }
+
     #footer {
       height: $footer-height*3;
 

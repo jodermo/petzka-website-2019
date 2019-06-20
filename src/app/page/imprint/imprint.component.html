@@ -10,18 +10,22 @@
       Moritz Petzka<br>
     </p>
     <p><strong>Konzept, Design, Text und Entwicklung dieser Seite: </strong><br>
-      Moritz Petzka<br>
-      2019<br>
-      Entwickelt mit Angular-CLI
-    </p>
+      Moritz Petzka, 2019<br>
+      Erstellt mit <a href="https://github.com/angular/angular-cli" target="_blank">Angular CLI</a> version 8.0.3.<br>
+      Website Repository (Sourcecode): <a href="https://github.com/jodermo/petzka-website-2019" target="_blank">https://github.com/jodermo/petzka-website-2019</a>
+    </p><br>
     <p><strong>Kontakt:</strong> <br>
-      E-Mail: <a href='mailto:info@petzka.com'>info@petzka.com</a><br></p>
+      E-Mail: <a href='mailto:info@petzka.com'>info@petzka.com</a></p><br>
     <app-social-media-buttons
-      [githubUser]="'jodermo'"
-      [xingProfile]="'Moritz_Petzka'"
-      [soundcloudUsers]="['user-452365221', 'midiVoltage']"
+      [accounts]="app.config.socialMediaAccounts"
     ></app-social-media-buttons>
-    <br><br><br>
+    <br><br>
+    <label>
+      <a routerLink="/contact">
+        <span>zum Kontakformular</span>
+      </a>
+    </label>
+    <br><br><br><br>
     <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
       Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
       Aktualität

@@ -2,12 +2,17 @@
      [ngClass]="{'inactive':(app.currentContent)}" (click)="app.currentContent = null">
   <div class="inside flex-box column text-container">
     <div>
-      <h1>
+      <h1 class="title-large">
         {{app.text(config.app.title)}}
       </h1>
-      <h3>
+      <h2>
         {{app.text(config.app.subtitle)}}
-      </h3>
+      </h2>
+      <div class="keywords">
+        <h1 class="title-small" *ngFor="let keyword of config.app.keywords">
+          {{app.text(keyword)}}
+        </h1>
+      </div>
       <b>
         {{app.text(config.app.job)}}
       </b><br>
@@ -15,11 +20,7 @@
       <span>{{app.text(config.app.remote)}}</span>
     </div>
     <app-social-media-buttons
-      [githubUser]="'jodermo'"
-      [dasauge]="'-moritz-petzka'"
-      [xingProfile]="'Moritz_Petzka'"
-      [youtubeChannels]="['UCIL_5UG8W-RgKXqoyT7I2uA']"
-      [soundcloudUsers]="['user-452365221', 'midiVoltage']"
+      [accounts]="app.config.socialMediaAccounts"
     ></app-social-media-buttons>
     <div class="flex-item">
       <p class="center-item">
@@ -38,7 +39,7 @@
         backgroundPosition:'center'
     }">
     </div>
-    <h2>{{app.text(box.title)}}</h2>
+    <h1>{{app.text(box.title)}}</h1>
   </div>
 </div>
 <div id="showBox" class="show-box-content content-right"
@@ -46,7 +47,7 @@
   <div *ngFor="let box of contents" class="show-box-content-element flex-box column"
        [ngClass]="{active:(app.currentContent === box)}">
     <div class="show-box-title">
-      <h2>{{app.text(box.title)}}</h2>
+      <h1>{{app.text(box.title)}}</h1>
     </div>
     <div class="show-box-text" *ngIf="box.text">
       <p>{{app.text(box.text)}}</p>

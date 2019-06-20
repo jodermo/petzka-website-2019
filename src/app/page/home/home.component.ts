@@ -9,7 +9,7 @@ import { Config } from '../../app.config';
 })
 export class HomeComponent implements OnInit {
   config = Config;
-  contents = Config.startPage.contents;
+  contents = Config.content.contents;
 
   constructor(public app: AppService) {
   }

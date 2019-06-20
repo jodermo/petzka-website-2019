@@ -6,13 +6,13 @@
 
   <!-- Email -->
   <a *ngIf="available('email')"
-     href="mailto:?Subject={{app.text(app.config.app.shareSubject)}}&amp;Body={{app.text(app.config.app.shareMessage)}}%20 {{(url || app.config.app.url)}}">
+     href="mailto:?Subject={{app.text(app.config.app.shareSubject)}}&amp;Body={{app.text(app.config.app.shareMessage)}}%20{{(url || app.config.app.url)}}">
     <fa-icon [icon]="emailIcon" size="lg"></fa-icon>
   </a>
 
   <!-- Twitter -->
   <a *ngIf="available('twitter')"
-     href="https://twitter.com/share?url={{(url || app.config.app.url)}}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons"
+     href="https://twitter.com/share?url={{(url || app.config.app.url)}}&amp;text={{app.urlString(app.text(app.config.app.shareMessage))}}&amp;hashtags={{app.config.app.hashtags}}"
      target="_blank">
     <fa-icon [icon]="tweetIcon" size="lg"></fa-icon>
   </a>
@@ -50,20 +50,20 @@
 
   <!-- Reddit -->
   <a *ngIf="available('reddit')"
-     href="http://reddit.com/submit?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons" target="_blank">
+     href="http://reddit.com/submit?url={{(url || app.config.app.url)}}&amp;title={{app.text(app.config.app.shareMessage)}}" target="_blank">
     <fa-icon [icon]="redditIcon" size="lg"></fa-icon>
   </a>
 
   <!-- StumbleUpon-->
   <a *ngIf="available('stumbleUpon')"
-     href="http://www.stumbleupon.com/submit?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons"
+     href="http://www.stumbleupon.com/submit?url={{(url || app.config.app.url)}}&amp;title={{app.text(app.config.app.shareMessage)}}"
      target="_blank">
     <fa-icon [icon]="stumbleuponIcon" size="lg"></fa-icon>
   </a>
 
   <!-- Tumblr-->
   <a *ngIf="available('tumblr')"
-     href="http://www.tumblr.com/share/link?url={{(url || app.config.app.url)}}&amp;title=Simple Share Buttons"
+     href="http://www.tumblr.com/share/link?url={{(url || app.config.app.url)}}&amp;title={{app.text(app.config.app.shareMessage)}}"
      target="_blank">
     <fa-icon [icon]="tumblrIcon" size="lg"></fa-icon>
   </a>

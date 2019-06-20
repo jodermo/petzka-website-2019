@@ -43,7 +43,6 @@ export class SocialMediaSharingComponent implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   available(buttonName: string) {

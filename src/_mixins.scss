@@ -50,4 +50,49 @@
   backface-visibility: $style;
 }
 
+@mixin mobile-table {
+
+  display: block;
+
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    text-align: left !important;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    white-space: normal;
+    text-align:left;
+  }
+
+  [title]:before {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 45%;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
+
+  [title]:before { content: attr(title); }
+
+  td:last-child {
+    border-bottom: none;
+  }
+}
+
+
 

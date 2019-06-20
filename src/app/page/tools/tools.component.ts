@@ -9,7 +9,7 @@ import { AppService } from '../../app.service';
 })
 export class ToolsComponent implements OnInit {
   config = Config;
-  contents = Config.startPage.contents;
+  contents = Config.content.contents;
 
 
   constructor(public app: AppService) {

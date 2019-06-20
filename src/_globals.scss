@@ -16,21 +16,15 @@ $header-height: 5rem;
 $footer-height: 3rem;
 
 $font-family-default: 'Roboto', sans-serif;
-$font-family-headline:  'Righteous', cursive;
+$font-family-headline: 'Righteous', cursive;
 $font-family-button: $font-family-headline;
 $font-family-highlight: $font-family-button;
 
+$title-color: #257678;
+$highlight-color: #47e8ea;
+$highlight-color-secondary: #2d9597;
 
-$color-brand-secondary: #222;
-$color-brand-secondary-hover: #222;
-$color-brand-secondary-active: #222;
-
-$color-brand-default: #222;
-$color-brand-default-hover: #2d9597;
-$color-brand-default-active: #3ec1c3;
-
-
-$color-background: #fafcd9;
+$color-background: #eeeeee;
 $color-background-hover: #a6a6a6;
 $color-background-active: #e4e4e4;
 $color-text: #222;
@@ -64,6 +58,7 @@ $font-size-small: .8rem;
 $font-size-medium: 1rem;
 $font-size-large: 1.25rem;
 $font-size-title: 2rem;
+$font-size-extra-large: 2.5rem;
 $font-size-subtitle: 1.5rem;
 
 $line-height-small: 1.2rem;
@@ -86,7 +81,7 @@ $box-shadow-light-inset: 0 0 $font-size-small 0 $color-transparent-light inset;
 $box-shadow-light-large-inset: 0 0 $font-size-medium 0 $color-transparent-light inset;
 $text-shadow-light: 1px 0 $font-size-small $color-transparent-light;
 
-$content-wrapper-width: 30rem;
+$content-wrapper-width: 60rem;
 $box-width: 30rem;
 $content-left-width: 40%;
 $content-right-width: 60%;
@@ -94,5 +89,5 @@ $thumbnail-width: 15rem;
 $form-width: $box-width;
 $input-height: 2rem;
 $icon-size: 4rem;
-$icon-size-small: 2rem;
+$icon-size-small: 1.5rem;
 $icon-size-large: 8rem;

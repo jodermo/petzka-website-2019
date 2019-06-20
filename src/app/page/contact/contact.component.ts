@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
   ];
   form: FormGroup;
   submitted = false;
+  captcherResponse;
   error;
 
   constructor(public app: AppService) {
@@ -58,15 +59,23 @@ export class ContactComponent implements OnInit {
   }
 
   sendMessage() {
-    if (!this.form.invalid) {
+
+    if (!this.form.invalid && this.captcherResponse) {
       this.submitted = true;
-       this.app.contactForm(this.form.value).subscribe(
-        data => this.form = data,
+      this.app.contactForm(this.form.value, this.captcherResponse).subscribe(
+        result => {
+          console.log('contactForm', result);
+
+        },
         error => this.error = error
       );
     } else {
       alert(this.app.text({de: 'Formular nicht richtig ausgefüllt', en: 'form not valid'}));
     }
+  }
+
+  resolved(captchaResponse: string) {
+    this.captcherResponse = captchaResponse;
   }
 
 }
