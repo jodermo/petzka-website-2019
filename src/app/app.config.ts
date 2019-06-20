@@ -607,7 +607,7 @@ export const Config = {
             name: 'Node.js',
             icon: 'assets/logos/nodejs-icon.svg',
             link: 'https://nodejs.org/en/about/',
-            experienceWorth: 10,
+            experienceWorth: 9.5,
             description: {
               de: '',
               en: ''
@@ -631,7 +631,7 @@ export const Config = {
             name: 'Nest.js',
             icon: 'assets/logos/nest_logo.svg',
             link: 'https://nestjs.com/',
-            experienceWorth: 10,
+            experienceWorth: 8.2,
             description: {
               de: '',
               en: ''
@@ -643,7 +643,7 @@ export const Config = {
             name: 'Three.js',
             icon: 'assets/logos/javascript-4.svg',
             link: 'https://threejs.org/',
-            experienceWorth: 10,
+            experienceWorth: 9.9,
             description: {
               de: '',
               en: ''
@@ -655,7 +655,7 @@ export const Config = {
             name: 'D3.js',
             icon: 'assets/logos/d3-2.svg',
             link: 'https://d3js.org/',
-            experienceWorth: 10,
+            experienceWorth: 7.5,
             description: {
               de: 'D3.js ist eine JavaScript-Bibliothek zum Bearbeiten von Dokumenten basierend auf Daten',
               en: 'D3.js is a JavaScript library for manipulating documents based on data'
@@ -709,7 +709,7 @@ export const Config = {
                 name: 'Docker',
                 icon: 'assets/logos/docker.svg',
                 link: 'https://www.docker.com/',
-                experienceWorth: 9
+                experienceWorth: 6
               }
             ],
           },
@@ -722,25 +722,25 @@ export const Config = {
                 name: 'Photoshop',
                 icon: 'assets/logos/photoshop-cc.svg',
                 link: 'https://helpx.adobe.com/photoshop/faq.html',
-                experienceWorth: 10
+                experienceWorth: 9
               },
               {
                 name: 'Illustrator',
                 icon: 'assets/logos/adobe-illustrator-cc.svg',
                 link: 'https://helpx.adobe.com/illustrator/faq.html',
-                experienceWorth: 9
+                experienceWorth: 8.4
               },
               {
                 name: 'Premiere',
                 icon: 'assets/logos/premiere-cc.svg',
                 link: 'https://helpx.adobe.com/premiere/faq.html',
-                experienceWorth: 10
+                experienceWorth: 8.9
               },
               {
                 name: 'After-Effects',
                 icon: 'assets/logos/after-effects-cc.svg',
                 link: 'https://helpx.adobe.com/after-effects/faq.html',
-                experienceWorth: 9
+                experienceWorth: 8
               },
             ],
           },
@@ -753,7 +753,7 @@ export const Config = {
                 name: 'Maya',
                 icon: 'assets/logos/maya-2017.svg',
                 link: 'https://www.autodesk.de/products/maya/overview',
-                experienceWorth: 8
+                experienceWorth: 8.5
               }
             ],
           },
@@ -1672,5 +1672,49 @@ export const Config = {
       de: 'Teilen:',
       en: 'Share:'
     }
+  ],
+  experienceWorth: [
+    ['node', 10],
+    ['angular', 10],
+    ['react', 7],
+    ['vue', 6.5],
+    ['jQuery', 10],
+    ['nestjs', 8.2],
+    ['three', 10],
+    ['d3', 7.5],
+    ['sass', 10],
+    ['less', 8],
+    ['sqlite ', 6.75],
+    ['js', 10],
+    ['html', 10],
+    ['css', 10],
+    ['python', 5],
+    ['database', 7.6],
+    ['WebStorm', 10],
+    ['PhpStorm', 6],
+    ['Docker', 6],
+    ['symfony', 6],
+    ['mysql', 8],
+    ['sqlite', 9.5],
+    ['mongodb', 9],
+    ['jsonserver', 6],
+    ['zend', 5],
+    ['Photoshop', 10],
+    ['Illustrator', 9.5],
+    ['InDesign', 7],
+    ['Premiere', 8.9],
+    ['After-Effects', 8],
+    ['Maya', 8.5],
+    ['Mudbox', 6],
+    ['3ds Max', 5],
+    ['Blender', 7],
+    ['Animate Pro', 8],
+    ['Harmony', 3],
+    ['Cubase', 8.5],
+    ['Nuendo', 5],
+    ['Wavelab', 6],
+    ['Ableton Live', 7],
+    ['Visual Studio Community', 9],
+    ['Visual Studio Code', 8.5],
   ]
 };

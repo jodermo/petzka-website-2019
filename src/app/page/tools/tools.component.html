@@ -23,7 +23,7 @@
     </div>
     <div class="show-box-list flex-item" *ngIf="box.list">
       <table class="table">
-        <thead  *ngIf="box.software && box.software.length" [title]="app.textSnippet('software')">
+        <thead *ngIf="box.software && box.software.length" [title]="app.textSnippet('software')">
         <tr>
           <th colspan="3">
             {{app.textSnippet('software')}}
@@ -40,7 +40,7 @@
             <a *ngIf="softW.link" href="{{softW.link}}" target="_blank">{{softW.company}}</a>
             <span *ngIf="!softW.link">{{softW.company}}</span>
           </th>
-          <td  colspan="2">
+          <td colspan="2">
             <ul>
               <li *ngFor="let product of softW.products">
                 <img *ngIf="product.icon" class="icon icon-small" [src]="product.icon"/>
@@ -52,13 +52,14 @@
           <td class="mobile-hide">
             <ul>
               <li *ngFor="let product of softW.products">
-                <app-experience-worth [value]="product.experienceWorth"></app-experience-worth>
+                <app-experience-worth [value]="app.experienceWorth(product.name)"></app-experience-worth>
               </li>
             </ul>
           </td>
         </tr>
         </tbody>
-        <thead *ngIf="box.programmingLanguages && box.programmingLanguages.length" [title]="app.textSnippet('programming_languages')">
+        <thead *ngIf="box.programmingLanguages && box.programmingLanguages.length"
+               [title]="app.textSnippet('programming_languages')">
         <tr>
           <th colspan="2">
             {{app.textSnippet('programming_languages')}}
@@ -93,10 +94,10 @@
           <td class="mobile-hide">
             <ul>
               <li *ngFor="let fw of app.aliasObjects(box.frameworks, pLang.alias, 'language')">
-                <app-experience-worth [value]="fw.experienceWorth"></app-experience-worth>
+                <app-experience-worth [value]="app.experienceWorth(fw.alias)"></app-experience-worth>
               </li>
               <li *ngIf="!app.aliasObjects(box.frameworks, pLang.alias, 'language').length">
-                <app-experience-worth [value]="pLang.experienceWorth"></app-experience-worth>
+                <app-experience-worth [value]="app.experienceWorth(pLang.alias)"></app-experience-worth>
               </li>
             </ul>
           </td>

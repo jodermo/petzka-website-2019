@@ -44,6 +44,16 @@ export class AppService {
 
   }
 
+  experienceWorth(name: string) {
+    console.log(name);
+    for (const elm of this.config.experienceWorth) {
+      if (elm[0] === name) {
+        return elm[1];
+      }
+    }
+    return null;
+  }
+
 
   print() {
     window.print();
