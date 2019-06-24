@@ -73,6 +73,11 @@
 
     .show-box .show-box-preview {
       width: 100%;
+      h1, h2{
+        white-space: normal;
+        transition: none;
+        transform: translateY(-50%);
+      }
     }
 
     .show-box-content.content-right-reverse.active {

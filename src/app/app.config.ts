@@ -54,12 +54,18 @@ export const Config = {
         title: {de: 'Webentwicklung', en: 'Web Development'},
         image: 'assets/images/webdev.jpg',
         text: {
-          de: 'Damals noch als Mediengestalter und Flash-Entwickler angefangen, kann ich Heute, auf über 10 Jahre Berufserfahrung im Online-Bereich zurück blicken. \n Durch meine Begeisterung an der Arbeit, habe ich über die Jahre einige Programmiersprachen, Frameworks und nützliche Softwares kennen, können und lieben gelernt. \nMittlerweile bin ich in der Lage, so gut wie jede Aufgabe zum gewünschten Ziel zu bringen. \n Ob einfache Webseite oder komplexe Unternehmens-Webseite, Online-Shop, Mobile-App, Online-Werbung, Visualisierung von Daten, Bühnen-Präsentationen oder Messe-Exponaten, Ich habe eigentlich fast alles schon mal entwickelt. \n\nSie benötigen unterstützung bei einem Projekt? \nHier eine Liste mit Dienstleistungen die ich anbiete:',
-          en: 'Starting at the time as a media designer and flash developer, today I can look back on over 10 years of professional experience in the online sector. \nOver the years I have come to know, control, and love so many programming languages, frameworks, and useful softwares. \nMeanwhile, I am able to bring almost any task to the desired destination. Whether it\'s a simple website or a complex corporate website, online shop, mobile app, online advertising, visualization of data, stage presentations or trade fair exhibits, I\'ve actually developed almost everything before. \n\nYou need assistance with a project? Here is a list of services I offer:'
+          de: 'Angefangen als Mediengestalter und Flash-Entwickler, kann ich Heute, auf über 10 erfolgreiche Jahre als Webentwickler, zurück blicken. \n Durch meine Begeisterung an der Arbeit und dem Interesse setehts Neues zu lernen, habe ich mittlerweile so einige Programmiersprachen, Frameworks und nützliche Softwares kennen, können und lieben gelernt. \nIch bin in der Lage, so gut wie jede Aufgabe zum gewünschten Ziel zu bringen. \nOb einfache Webseite oder komplexe Unternehmens-Webseite, Online-Shop, Mobile-App, Online-Werbung, Visualisierung von Daten, Bühnen-Präsentationen oder Messe-Exponaten und Displays. \n\nSie benötigen unterstützung bei einem Projekt? \nHier eine Liste mit Dienstleistungen die ich anbiete:',
+          en: 'Starting as a media designer and flash developer, today I can look back on more than 10 successful years as a web developer.\n' +
+            'Thanks to my enthusiasm for work and the interest to learn new things, I have come to know, can and love so many programming languages, frameworks and useful softwares.\n' +
+            'I am able to bring almost every task to the desired destination.\n' +
+            'Whether simple website or complex company website, online shop, mobile apps, online advertising, visualization of data, stage presentations or trade fair exhibits/displays.\n' +
+            '\n' +
+            'You need assistance with a project?\n' +
+            'Here is a list of services I offer:'
         },
         toolText: {
-          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
-          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
+          de: 'Überblick über meine Werkzeuge und Fahigkeiten:\n\n',
+          en: 'Overview of my tools and skills\n\n'
         },
         list: [
           {
@@ -487,7 +493,7 @@ export const Config = {
         title: {de: 'Interaktive \nPräsentationen', en: 'Interactive \nPresentations'},
         image: 'assets/images/presentation.jpg',
         text: {
-          de: 'Ein Web-Interface als interaktive Präsentation, bietet die perfekte Lösung, z.B. für Messestände, Bühnen-Präsentationen oder Werbetafeln. \nMit CSS3, HTML-Canvas-Elementen, SVGs und diversen JavaScript Bibliotheken, lassen sich dynamische Animationen erstellen und dank WebGL und Three.js ist auch die Darstellung von 3-Dimensinalen Inhalten ohne probleme möglich. \nEs besteht zudem die Möglichkeit, neben dem Interface, einen lokalen Webserver laufen zu lassen. So sind für diverse Interaktionen nahezu unbegenzte Möglichkeiten gegeben. \nVerschiedenste Hardware lässt sich so, verbunden mit Netzwerkkabel, USB oder als WLAN Gerät, auslesen und ansteuern. \nSo besteht die Möglichkeit Geräte wie z.B. VR-/AR-Headsets, Gamepads, Einplatinenrechner (z.B. Raspberry Pi) oder Controller und Sensoren anzuschliessen. \n \n Hier ein paar Beispiel-Anwendungen die ich in letzter Zeit umgesetzt habe:',
+          de: 'Ein Web-Interface als interaktive Präsentation, bietet die perfekte Lösung, z.B. für Messestände, Bühnen-Präsentationen oder Werbetafeln. \nMit CSS3, HTML-Canvas-Elementen, SVGs und diversen JavaScript Bibliotheken, lassen sich dynamische Animationen erstellen und dank WebGL und Three.js ist auch die Darstellung von 3-dimensinalen Inhalten ohne Probleme möglich. \nEs besteht zudem die Möglichkeit, neben dem Interface, einen lokalen Webserver laufen zu lassen. So sind für diverse Interaktionen nahezu unbegenzte Möglichkeiten gegeben. \nVerschiedenste Hardware lässt sich so, verbunden mit Netzwerkkabel, USB oder als WLAN Gerät, auslesen und ansteuern. \nSo besteht die Möglichkeit Geräte wie z.B. VR-/AR-Headsets, Gamepads, Einplatinenrechner (z.B. Raspberry Pi) oder Controller und Sensoren anzuschliessen. \n \n Hier ein paar Beispiel-Anwendungen die ich in letzter Zeit umgesetzt habe:',
           en: 'A web interface as an interactive presentation provides the perfect solution, e.g. for exhibition stands, stage presentations or billboards.\n' +
             'With CSS3, HTML canvas elements, SVGs and various JavaScript libraries, dynamic animations can be created and thanks to WebGL and Three.js, the display of 3-dimensional contents is also possible without any problems.\n' +
             'It is also possible to run a local web server next to the interface with the presentation. Thus, there are almost unlimited possibilities for various interactions.\n' +
@@ -497,8 +503,8 @@ export const Config = {
             '  Here are a few example applications that I have recently implemented:',
         },
         toolText: {
-          de: 'Überblick über verwendete Techniken und Tools::\n\n',
-          en: 'Overview of used techniques and tools:\n\n'
+          de: 'Überblick über meine Werkzeuge und Fahigkeiten:\n\n',
+          en: 'Overview of my tools and skills\n\n'
         },
         list: [
           {
@@ -764,7 +770,7 @@ export const Config = {
         title: {de: 'Grafik & Animation', en: 'Graphic & Animation'},
         image: 'assets/images/gfx.jpg',
         text: {
-          de: 'Wegen meiner künstlerichen Begabung und Leidenschaft für Medien und deren Gestaltung, habe ich mich nach meiner Schullaufbahn dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir damals einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler, bei der Firma ImagineOn in Köln, verschafft und seit 2012 bin ich erfolgreich Selbstständig. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dingen die ich beherrsche:',
+          de: 'Wegen meiner künstlerichen Begabung und Leidenschaft für Medien und deren Gestaltung, habe ich mich nach meiner Schullaufbahn dazu entschieden, eine Ausbildung als Mediengestalter und Gestaltungtechnischer-Assistent zu machen, diese habe ich dann 2010 auch erfolgreich abgeschlossen. \nDie Ausbildung hat mir damals einen optimalen Berufseinstieg, als Grafiker, Motion/VFX designer und Flash-Entwickler, bei der Firma ImagineOn in Köln, verschafft und seit 2012 bin ich erfolgreich Selbstständig. \nBis heute ist die Gestaltung und Bearbeitung von Visuellen Medien eine große Leidenschaft von mir. In Verbindung mit einer weiteren Leideschaft, dem Programmieren, habe ich über die Letzten Jahre mein Know-How, vor allem im Bereich Animation und 3D-Design immer weiter ausbauen können. \n\nHier eine Liste von Dienstleistungen die ich anbiete:',
           en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
             'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
             'To this day, designing and editing visual media is a great passion of mine. In connection with another suffering, the programming, I have been able to expand my know-how over the last years, especially in the field of animation and 3D design.\n' +
@@ -772,8 +778,8 @@ export const Config = {
             'Here is a list of things I do:',
         },
         toolText: {
-          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
-          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
+          de: 'Überblick über meine Werkzeuge und Fahigkeiten:\n\n',
+          en: 'Overview of my tools and skills\n\n'
         },
         list: [
           {
@@ -1015,16 +1021,16 @@ export const Config = {
         title: {de: 'Video-Bearbeitung', en: 'Video Editing'},
         image: 'assets/images/vfx.jpg',
         text: {
-          de: 'In meiner Ausbildung als Mediengestalter, habe ich die Grundlagen für Video-Produktion und Nachbearbeitung gelernt. \nBis heute ist die aufbereitung von Video-Material ein großer bestandteil meiner Arbeit. \nDie Verbindung aus Grafik-Bearbeitung, Animation und Video-Bearbeitung hat dazu geführ, das ich mich mit der Erstellung von VFX und Motion-Designs auseinander gesetzt habe. \n\nEine Überblick über Dienstleistungen die ich anbiete:',
-          en: 'Due to my passion for media in the picture and sound and my creative talents, I decided to do an apprenticeship as a media designer and design technical assistant, which I successfully completed in 2010.\n' +
-            'The apprenticeship gave me an optimal career start, as a graphic/motion/VFX designer and flash developer.\n' +
-            'In addition to my work as a graphic designer and developer, the production of videos is a great passion of mine.\n' +
+          de: 'In meiner Ausbildung als Mediengestalter, habe ich die Grundlagen für Video-Produktion und Nachbearbeitung gelernt. \nBis heute ist die aufbereitung von Video-Material ein großer Bestandteil meiner Arbeit. \nDie Verbindung aus Grafik-Bearbeitung, Animation und Video-Bearbeitung hat dazu geführ, das ich mich zudem vermehrt auf die Erstellung von VFX und Motion-Designs spezialisiert habe. \n\nEine Überblick über Dienstleistungen die ich anbiete:',
+          en: 'In my training as a media designer, I learned the basics of video production and post-production.\n' +
+            'To date, the preparation of video material is a major part of my work.\n' +
+            'The combination of graphics editing, animation and video editing has meant that I have also increasingly specialized in the creation of VFX and motion designs.\n' +
             '\n' +
-            'Here is a list of things I do:',
+            'An overview of the services I offer:',
         },
         toolText: {
-          de: 'Überblick über meine Fähigkeiten und die Werkzeuge mit denen ich arbeite. \n\n',
-          en: 'Here\'s an overview of my skills and the tools I work with. \n\n'
+          de: 'Überblick über meine Werkzeuge und Fahigkeiten:\n\n',
+          en: 'Overview of my tools and skills\n\n'
         },
         list: [
           {
@@ -1220,13 +1226,6 @@ export const Config = {
   },
   links: [
     {
-      alias: 'showroom',
-      name: 'Show Room',
-      description: {de: 'Eine kleine Sammlung an Demo-Projekten von mir', en: 'A small selection of my demo projects'},
-      image: 'assets/images/showroom.jpg',
-      url: 'http://showroom.petzka.com/',
-    },
-    {
       alias: 'github',
       name: 'GitHub',
       description: {de: 'Mein GitHub Profil', en: 'My GitHub Account'},
@@ -1253,6 +1252,20 @@ export const Config = {
       description: {de: 'Mein Profil auf dasauge.de', en: 'My Account on freelancermap'},
       image: 'assets/images/dasauge.jpg',
       url: 'https://dasauge.de/-moritz-petzka/',
+    },
+    {
+      alias: 'linkedin',
+      name: 'linkedIn',
+      description: {de: 'Mein Profil auf www.linkedin.com', en: 'My Account on freelancermap'},
+      image: 'assets/images/linkedIn.jpg',
+      url: 'https://www.linkedin.com/in/moritz-petzka',
+    },
+    {
+      alias: 'showroom',
+      name: 'Show Room',
+      description: {de: 'Eine kleine Sammlung an Demo-Projekten von mir', en: 'A small selection of my demo projects'},
+      image: 'assets/images/showroom.jpg',
+      url: 'http://showroom.petzka.com/',
     },
     /*
     {

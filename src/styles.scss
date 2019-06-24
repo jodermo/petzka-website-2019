@@ -508,6 +508,20 @@ re-captcha {
     @include transition(all, $animation-slow, ease);
   }
 
+  &.no-content {
+    .show-box-preview {
+      h1, h2 {
+        color: #fff;
+        text-shadow: $text-shadow-default;
+      }
+
+    }
+
+    .show-box-background:after {
+      opacity: 0;
+    }
+  }
+
   &.inactive {
     max-height: 0;
     transform: scale(0, 0);

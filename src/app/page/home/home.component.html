@@ -29,7 +29,7 @@
     </div>
   </div>
 </div>
-<div class="page-element show-box" [ngClass]="{'content-left':(app.currentContent)}">
+<div class="page-element show-box" [ngClass]="{'content-left':(app.currentContent), 'no-content':(!app.currentContent)}">
   <div class="show-box-preview" *ngFor="let box of contents"
        (click)="app.showContent(box, true);"
        [ngClass]="{active:(app.currentContent === box)}">

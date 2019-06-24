@@ -1,4 +1,4 @@
-<div class="page-element stretch-box show-box" [ngClass]="{'content-left-reverse':(app.currentLink)}">
+<div class="page-element stretch-box show-box" [ngClass]="{'content-left-reverse':(app.currentLink), 'no-content':(!app.currentLink)}">
   <div class="show-box-preview" *ngFor="let link of links" (click)="app.showLink(link);"
        [ngClass]="{active:(app.currentLink === link)}">
     <div *ngIf="link.image" class="show-box-background" [ngStyle]="{

@@ -1,4 +1,4 @@
-<div class="page-element stretch-box show-box" [ngClass]="{'content-left-reverse':(app.currentCustomer)}">
+<div class="page-element stretch-box show-box" [ngClass]="{'content-left-reverse':(app.currentCustomer), 'no-content':(!app.currentCustomer)}">
   <div class="show-box-preview" *ngFor="let customer of customers" (click)="app.showCustomer(customer);"
        [ngClass]="{active:(app.currentCustomer === customer)}">
     <div class="show-box-background" [ngStyle]="{
