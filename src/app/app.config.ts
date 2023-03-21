@@ -1303,6 +1303,106 @@ export const Config = {
   ],
   customers: [
     {
+      name: 'Daimler',
+      description: {de: 'Hersteller von Personenkraftwagen und Nutzfahrzeugen', en: 'Manufacturer of passenger cars and commercial vehicles'},
+      website: 'https://www.daimler.com/',
+      image: 'assets/images/daimler.jpg',
+      logo: 'assets/images/daimler.jpg',
+      tasks: [
+        {de: 'Messe Exponaten', en: 'Fair Exponats'},
+        {de: 'Päsentationen', en: 'Presentations'},
+        {de: 'Unternehmens Webseiten', en: 'Company Websites'},
+        {de: 'Apps', en: 'Apps'}
+      ],
+      technologies: [
+        {de: 'Angular', en: 'Angular'},
+        {de: 'Three.js', en: 'Three.js'},
+        {de: 'D3.js', en: 'D3.js'},
+        {de: 'Contao CMS', en: 'Contao CMS'}
+      ]
+    },
+    {
+      name: 'Douglas',
+      description: {de: 'Parfümerie Douglas GmbH', en: 'Douglas GmbH'},
+      website: 'https://www.douglas.de/',
+      image: 'assets/images/douglas_bg.jpg',
+      logo: 'assets/images/douglas_logo.svg',
+      tasks: [
+        {de: 'Mitglied im Web-Development Team', en: 'Member of the web development team'},
+        {de: 'Instandhaltung und Pflege des Online-Auftritts', en: 'Maintenance and care of the online presence'},
+        {de: 'Erstellung von internationalen Online-Kampagnen', en: 'Creation of international online campaigns'}
+      ],
+      technologies: [
+        {de: 'Hybris', en: 'Hybris'},
+        {de: 'React', en: 'React'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
+    },
+    {
+      name: 'Ritterbach Verlag GmbH',
+      description: {de: 'Verlag in Erftstadt', en: 'Publishing company in Erftstadt'},
+      website: 'https://ritterbach.de/home.html',
+      image: 'assets/images/ritterbach_bg.jpg',
+      logo: 'assets/images/ritterbach_bg.svg',
+      tasks: [
+        {de: 'Umsetzung einer Webseite zum Thema digitalisierung von Schulen', en: 'Implementation of an website on the topic of digitization of schools'},
+        {de: 'Apps', en: 'Apps'}
+      ],
+      technologies: [
+        {de: 'Angular', en: 'Angular'},
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
+    },
+    {
+      name: 'YoloMio',
+      description: {de: 'Videoplattform für bewerbungen', en: 'Video platform for applications'},
+      website: 'https://yolomio.de/',
+      image: 'assets/images/yolomio.jpg',
+      logo: 'assets/images/yolomio.svg',
+      tasks: [
+        {de: 'Kundenplatform', en: 'Customer Dashbaord'},
+        {de: 'Website', en: 'Webseite'},
+        {de: 'Smarthphone App', en: 'Mobile App'},
+        {de: 'web App', en: 'Web App'}
+      ],
+      technologies: [
+        {de: 'Angular', en: 'Angular'},
+        {de: 'Nest.js', en: 'Nest.js'},
+        {de: 'AWS', en: 'AWS'},
+        {de: 'Contao CMS', en: 'Contao CMS'},
+        {de: 'JavaScript', en: 'JavaScript'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
+    },
+    {
+      name: 'It`s all about content',
+      description: {de: 'Full-Service-Agentur', en: 'Full service Agency'},
+      website: 'http://its-all-about-content.de/',
+      image: 'assets/images/its-all-about-content.jpg',
+      logo: 'assets/images/its-all-about-content.jpg',
+      task: {de: 'Entwicklung von', en: 'development of'},
+      tasks: [
+        {de: 'Messe Exponaten', en: 'Fair Exponats'},
+        {de: 'Päsentationen', en: 'Presentations'},
+        {de: 'Unternehmens Webseiten', en: 'Company Websites'},
+        {de: 'Apps', en: 'Apps'}
+      ],
+      technologies: [
+        {de: 'Angular', en: 'Angular'},
+        {de: 'Three.js', en: 'Three.js'},
+        {de: 'D3.js', en: 'D3.js'},
+        {de: 'Contao CMS', en: 'Contao CMS'},
+      ]
+    },
+    {
       name: 'BRAND.NEW DAY',
       description: {de: 'Agentur für interaktionsbezogene Markenkommunikation', en: ''},
       website: 'http://www.brandnewday.de/',
@@ -1323,38 +1423,23 @@ export const Config = {
       ]
     },
     {
-      name: 'Douglas',
-      description: {de: 'Parfümerie Douglas GmbH', en: ''},
-      website: 'https://www.douglas.de/',
-      image: 'assets/images/douglas_bg.jpg',
-      logo: 'assets/images/douglas_logo.svg',
+      name: 'Ruffsolar',
+      description: {de: 'Photovoltaik', en: 'Photovoltaic'},
+      website: 'http://ruffsolar.com/',
+      image: 'assets/images/ruffsolar.jpg',
+      logo: 'assets/images/ruffsolar.jpg',
       tasks: [
-        {de: 'Mitglied im Web-Development Team', en: 'Member of the web development team'},
-        {de: 'Instandhaltung und Pflege des Online-Auftritts', en: 'Maintenance and care of the online presence'},
-        {de: 'Erstellung von internationalen Online-Kampagnen', en: 'Creation of international online campaigns'}
+        {de: 'Unternehmens Webseiten', en: 'Company Websites'},
+        {de: 'Apps', en: 'Apps'}
       ],
       technologies: [
-        {de: 'Hybris', en: 'Hybris'},
-        {de: 'React', en: 'React'},
+        {de: 'Angular', en: 'Angular'},
+        {de: 'Nest.js', en: 'Nest.js'},
+        {de: 'AWS', en: 'AWS'},
+        {de: 'Contao CMS', en: 'Contao CMS'},
         {de: 'JavaScript', en: 'JavaScript'},
         {de: 'HTML & CSS', en: 'HTML & CSS'},
-        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
-      ]
-    },
-    {
-      name: 'Cormanum',
-      description: {de: 'DIE WELT UM HANDWERK, KUNST UND DESIGN', en: ''},
-      website: 'https://www.cormanum.com/',
-      image: 'assets/images/cormanum_bg.jpg',
-      logo: 'assets/images/cormanum.svg',
-      tasks: [
-        {de: 'Entwicklung des Online-Shops', en: 'Development of the online shop'},
-        {de: 'Betreuung des Online-Shops', en: 'Care of the online shop'},
-      ],
-      technologies: [
-        {de: 'Shopware', en: 'Shopware'},
-        {de: 'JavaScript', en: 'JavaScript'},
-        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'PHP', en: 'PHP'},
         {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
       ]
     },
@@ -1396,6 +1481,23 @@ export const Config = {
         {de: 'TypeScript', en: 'TypeScript'},
         {de: 'JavaScript', en: 'JavaScript'},
         {de: 'D3.js', en: 'D3.js'},
+        {de: 'HTML & CSS', en: 'HTML & CSS'},
+        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
+      ]
+    },
+    {
+      name: 'Cormanum',
+      description: {de: 'DIE WELT UM HANDWERK, KUNST UND DESIGN', en: ''},
+      website: 'https://www.cormanum.com/',
+      image: 'assets/images/cormanum_bg.jpg',
+      logo: 'assets/images/cormanum.svg',
+      tasks: [
+        {de: 'Entwicklung des Online-Shops', en: 'Development of the online shop'},
+        {de: 'Betreuung des Online-Shops', en: 'Care of the online shop'},
+      ],
+      technologies: [
+        {de: 'Shopware', en: 'Shopware'},
+        {de: 'JavaScript', en: 'JavaScript'},
         {de: 'HTML & CSS', en: 'HTML & CSS'},
         {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
       ]
@@ -1477,7 +1579,6 @@ export const Config = {
         {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
       ]
     },
-    /*
 {
   name: 'c+s / ceramic + stein',
   description: {de: 'Ihrer Welt der Markenfliesen', en: 'Ihrer Welt der Markenfliesen'},
@@ -1485,7 +1586,6 @@ export const Config = {
   image: 'assets/images/c+s_bg.jpg',
   logo: 'assets/images/c+s.jpg'
 },
-     */
     {
       name: 'Underground Events',
       description: {de: 'Parties, Konzerte und Veranstaltungen', en: 'Parties, Concerts and Events'},
@@ -1503,23 +1603,6 @@ export const Config = {
         {de: 'JavaScript', en: 'JavaScript'},
         {de: 'HTML & CSS', en: 'HTML & CSS'},
         {de: 'PHP', en: 'PHP'},
-        {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
-      ]
-    },
-    {
-      name: 'Crew4You',
-      description: {de: 'TV, Grafik & Web', en: 'TV, Graphic & Web'},
-      website: 'http://www.crew4you.info/',
-      image: 'assets/images/crew_4_you_bg.jpg',
-      logo: 'assets/images/c4u.png',
-      tasks: [
-        {de: 'Betreuung von Webseiten', en: 'Supervision of websites'},
-        {de: 'Ausbau einer API', en: 'Expansion of an API'},
-      ],
-      technologies: [
-        {de: 'PHP', en: 'PHP'},
-        {de: 'JavaScript', en: 'JavaScript'},
-        {de: 'HTML & CSS', en: 'HTML & CSS'},
         {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
       ]
     },
@@ -1583,7 +1666,7 @@ export const Config = {
     image: 'assets/images/albert_schw_st_bg.jpg',
     logo: 'assets/images/albert-schweitzer-stiftung-logo.png'
     },
-     */
+
     {
       name: 'Agentur für mehr Wert(e)',
       description: {de: 'Essen, Trinken und Tanzen', en: 'Essen, Trinken und Tanzen'},
@@ -1602,7 +1685,7 @@ export const Config = {
         {de: 'Adobe Photoshop', en: 'Adobe Photoshop'}
       ]
     },
-    /*
+
     {
       name: 'TSP Metallgestaltung',
       description: {de: 'Treppen und Geländer', en: 'Treppen und Geländer'},
